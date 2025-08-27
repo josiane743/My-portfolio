@@ -84,7 +84,7 @@ Milestone: Live e-commerce website with full functionality
 #Typography: Poppins was selected for a clean, modern look (Google Fonts, 2025), while Aptos was tested for potential body text due to its versatility (Microsoft, 2023).
 
 #Design principles: The overall navigation and UX layout followed best practices outlined by Nielsen Norman Group (2024) and usability principles by Krug (2014).
-**
+**https://github.com/josiane743/My-portfolio.git**
 
 
 
