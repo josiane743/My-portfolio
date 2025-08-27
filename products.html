@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Metadata -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Our Products | StyleHub Boutique</title>
+    <link rel="stylesheet" href="css/style.css">
+    <style>
+        /* ---------- General Reset ---------- */
+        * { margin: 0; padding: 0; box-sizing: border-box; font-family: Arial, sans-serif; }
+
+        body { background: #f9f9f9; color: #333; }
+
+        .container { width: 90%; max-width: 1200px; margin: auto; }
+
+        /* ---------- Header ---------- */
+        .header { background: #222; padding: 15px 0; color: #fff; }
+        .header .nav-container { display: flex; justify-content: space-between; align-items: center; }
+        .logo { color: #fff; font-size: 24px; font-weight: bold; text-decoration: none; }
+        .nav-links { list-style: none; display: flex; gap: 20px; }
+        .nav-links li a { color: #ddd; text-decoration: none; transition: 0.3s; }
+        .nav-links li a:hover, .nav-links .active { color: #fff; font-weight: bold; }
+
+        /* ---------- Products Grid ---------- */
+        h1 { text-align: center; margin: 30px 0; font-size: 28px; }
+        .product-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 20px; margin-bottom: 40px; }
+        .product-card { background: #fff; padding: 15px; border-radius: 8px; box-shadow: 0 2px 6px rgba(0,0,0,0.1); text-align: center; }
+        .product-card img { width: 100%; border-radius: 8px; margin-bottom: 10px; }
+        .product-price { color: #555; margin: 5px 0 15px; font-weight: bold; }
+        .btn { padding: 10px 15px; background: #ff4081; color: #fff; border: none; border-radius: 5px; cursor: pointer; margin: 5px; font-size: 14px; transition: background 0.3s; }
+        .btn:hover { background: #e73570; }
+
+        /* ---------- Delivery Details ---------- */
+        .delivery-section { background: #fff; padding: 20px; margin: 40px auto; border-radius: 8px; box-shadow: 0 2px 6px rgba(0,0,0,0.1); }
+        .delivery-section h2 { margin-bottom: 15px; }
+        .delivery-section p { margin-bottom: 10px; font-size: 16px; }
+
+        /* ---------- Tracking ---------- */
+        .tracking-section { background: #fff; padding: 20px; margin: 20px auto; border-radius: 8px; box-shadow: 0 2px 6px rgba(0,0,0,0.1); }
+        .tracking-section input { padding: 10px; width: 70%; border: 1px solid #ccc; border-radius: 5px; margin-right: 10px; }
+        .tracking-section button { padding: 10px 15px; background: #2196F3; color: white; border: none; border-radius: 5px; cursor: pointer; }
+        .tracking-section button:hover { background: #1976D2; }
+        .tracking-result { margin-top: 15px; font-weight: bold; }
+
+        /* ---------- Footer ---------- */
+        .footer { background: #222; color: #ccc; padding: 15px; text-align: center; margin-top: 40px; }
+    </style>
+</head>
+<body>
+
+    <!-- Header & Navigation Section -->
+    <header class="header">
+        <div class="container nav-container">
+            <a href="index.html" class="logo">StyleHub 💎</a>
+            <nav>
+                <ul class="nav-links">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="products.html" class="active">Products</a></li>
+                    <li><a href="enquiry.html">Enquiry</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Main Content Section -->
+    <main class="container">
+        <h1>Our Collections 🛍️</h1>
+        
+        <!-- Product Grid -->
+        <div class="product-grid" id="product-grid">
+            <div class="product-card">
+                <img src="dress.jpeg" alt="Dress">
+                <h3>Elegant evening dress</h3>
+                <p class="product-price">R1299.99</p>
+                <select class="size-selector">
+                    <option value="">Select Size</option>
+                    <option value="S">Small (S)</option>
+                    <option value="M">Medium (M)</option>
+                    <option value="L">Large (L)</option>
+                    <option value="XL">Extra Large (XL)</option>
+                </select>
+                <button class="btn add-wishlist">Add to Wishlist</button>
+                <button class="btn add-cart">Add to Cart</button>
+            </div>
+            <div class="product-card">
+                <img src="shoe.jpeg" alt="shoe">
+                <h3>Tready Sneaker</h3>
+                <p class="product-price">R499.99</p>
+                <select class="size-selector">
+                    <option value="">Select Size</option>
+                    <option value="S">Small (S)</option>
+                    <option value="M">Medium (M)</option>
+                    <option value="L">Large (L)</option>
+                    <option value="XL">Extra Large (XL)</option>
+                </select>
+                <button class="btn add-wishlist">Add to Wishlist</button>
+                <button class="btn add-cart">Add to Cart</button>
+            </div>
+            <div class="product-card">
+                <img src="bag.jpeg" alt="bag">
+                <h3>Classic leader bag</h3>
+                <p class="product-price">R899.99</p>
+                <select class="size-selector">
+                    <option value="">Select Size</option>
+                    <option value="S">Small (S)</option>
+                    <option value="M">Medium (M)</option>
+                    <option value="L">Large (L)</option>
+                    <option value="XL">Extra Large (XL)</option>
+                </select>
+                <button class="btn add-wishlist">Add to Wishlist</button>
+                <button class="btn add-cart">Add to Cart</button>
+            </div>
+            <div class="product-card">
+                <img src="jumpsuit.jpeg" alt="jumpsuit">
+                <h3>Urban Explorer Tote Bag</h3>
+                <p class="product-price">R750.00</p>
+                <select class="size-selector">
+                    <option value="">Select Size</option>
+                    <option value="S">Small (S)</option>
+                    <option value="M">Medium (M)</option>
+                    <option value="L">Large (L)</option>
+                    <option value="XL">Extra Large (XL)</option>
+                </select>
+                <button class="btn add-wishlist">Add to Wishlist</button>
+                <button class="btn add-cart">Add to Cart</button>
+            </div>
+            <div class="product-card">
+                <img src="earring.jpeg" alt="Earrings">
+                <h3>Silver earring</h3>
+                <p class="product-price">R350.00</p>
+                <select class="size-selector">
+                    <option value="">Select Size</option>
+                    <option value="S">Small (S)</option>
+                    <option value="M">Medium (M)</option>
+                    <option value="L">Large (L)</option>
+                    <option value="XL">Extra Large (XL)</option>
+                </select>
+                <button class="btn add-wishlist">Add to Wishlist</button>
+                <button class="btn add-cart">Add to Cart</button>
+            </div>
+             <div class="product-card">
+                <img src="jacket.jpeg" alt="jacket">
+                <h3>Versatile Denim jacket</h3>
+                <p class="product-price">R350.00</p>
+                <button class="btn add-wishlist">Add to Wishlist</button>
+                <button class="btn add-cart">Add to Cart</button>
+        </div>
+
+        <!-- Delivery Details Section -->
+        <section class="delivery-section">
+            <h2>Delivery Details 🚚</h2>
+            <p>📦 Delivery Time: 2-5 business days within South Africa.</p>
+            <p>🌍 International Shipping: 7-14 business days.</p>
+            <p>💳 Free delivery for orders over R1000.</p>
+        </section>
+
+        <!-- Tracking Section -->
+        <section class="tracking-section">
+            <h2>Track Your Order 📦</h2>
+            <input type="text" id="tracking-id" placeholder="Enter Tracking ID">
+            <button onclick="trackOrder()">Track</button>
+            <p id="tracking-result" class="tracking-result"></p>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <p>© 2025 StyleHub Boutique. All Rights Reserved.</p>
+    </footer>
+
+    <!-- JavaScript -->
+    <script>
+        // Wishlist and Cart Functionality
+        document.querySelectorAll('.add-wishlist').forEach(button => {
+            button.addEventListener('click', () => {
+                alert('Added to Wishlist! ❤️');
+            });
+        });
+
+        document.querySelectorAll('.add-cart').forEach(button => {
+            button.addEventListener('click', () => {
+                alert('Added to Cart! 🛒');
+            });
+        });
+
+        // Tracking Functionality
+        function trackOrder() {
+            const trackingInput = document.getElementById('tracking-id').value.trim();
+            const result = document.getElementById('tracking-result');
+
+            if (trackingInput === "") {
+                result.textContent = "⚠️ Please enter a valid Tracking ID.";
+                result.style.color = "red";
+            } else {
+                result.textContent = `✅ Your order with ID "${trackingInput}" is being processed.`;
+                result.style.color = "green";
+            }
+        }
+    </script>
+</body>
+</html>
