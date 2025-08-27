@@ -85,6 +85,9 @@ Milestone: Live e-commerce website with full functionality
 
 #Design principles: The overall navigation and UX layout followed best practices outlined by Nielsen Norman Group (2024) and usability principles by Krug (2014).
 **https://github.com/josiane743/My-portfolio.git**
+**Wireframe**
+#![fram2](https://github.com/user-attachments/assets/932f70e5-7478-4dae-95e7-6020320c20c0)
+
 
 
 
