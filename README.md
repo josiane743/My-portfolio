@@ -1,5 +1,5 @@
 
-
+# My-Portfolio
 **Project Overview**
 #My retail store webside is a online shopping platform that allows you to shop the classy and elegant clothing and jewellery, it is userfriedly and we are always available to assist our customer and satisfy the needs.
 
@@ -60,7 +60,23 @@ Week 10: Final testing, optimization, and store launch
 Milestone: Live e-commerce website with full functionality 
 
 **Sitemap**
-# <img width="987" height="598" alt="image" src="https://github.com/user-attachments/assets/3db39216-89ea-42ea-bd9a-76bc1a11d8b6" /># My-Portfolio
+# <img width="987" height="598" alt="image" src="https://github.com/user-attachments/assets/3db39216-89ea-42ea-bd9a-76bc1a11d8b6" /> 
+
+**References**
+#W3Schools. (2025) HTML and CSS tutorials. Available at: https://www.w3schools.com/
+#Pinterest. (2025) Fashion website UI inspiration. Available at: https://www.pinterest.com/
+#Google Fonts. (2025) Poppins Typeface. Available at: https://fonts.google.com/specimen/Poppins
+#Microsoft. (2023) Aptos font family overview. Available at: https://learn.microsoft.com/
+#Nielsen Norman Group. (2024) Principles of UX design. Available at: https://www.nngroup.com/
+#Krug, S. (2014) Don't Make Me Think: A Common Sense Approach to Web Usability
+#Code usage: The HTML and CSS framework was developed using examples and structures from W3Schools (2025).
+#Images and style: The product layout and homepage design were inspired by Pinterest boards featuring fashion e-commerce UI trends (Pinterest, 2025).
+#Colour palette: The chosen pink (#ff4081) and gold (#FFD700) accents were sourced using Adobe Color to maintain a modern, elegant brand tone (Adobe Color, 2025; Smith, 2023).
+#Typography: Poppins was selected for a clean, modern look (Google Fonts, 2025), while Aptos was tested for potential body text due to its versatility (Microsoft, 2023).
+#Design principles: The overall navigation and UX layout followed best practices outlined by Nielsen Norman Group (2024) and usability principles by Krug (2014).
+
+
+
 
  
 
