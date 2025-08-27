@@ -1,4 +1,4 @@
-<img width="987" height="598" alt="image" src="https://github.com/user-attachments/assets/3db39216-89ea-42ea-bd9a-76bc1a11d8b6" /># My-Portfolio
+
 
 **Project Overview**
 #My retail store webside is a online shopping platform that allows you to shop the classy and elegant clothing and jewellery, it is userfriedly and we are always available to assist our customer and satisfy the needs.
@@ -60,7 +60,7 @@ Week 10: Final testing, optimization, and store launch
 Milestone: Live e-commerce website with full functionality 
 
 **Sitemap**
-#
+# <img width="987" height="598" alt="image" src="https://github.com/user-attachments/assets/3db39216-89ea-42ea-bd9a-76bc1a11d8b6" /># My-Portfolio
 
  
 
