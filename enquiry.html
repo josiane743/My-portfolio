@@ -5,83 +5,144 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Enquiry | StyleHub Boutique</title>
     <link rel="stylesheet" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 </head>
 <body>
     <header>
-        <div class="header-container">
+        <div class="container">
             <div class="logo">
-                <a href="index.html">StyleHub 💎</a>
+                <h1>StyleHub</h1>
             </div>
-            <nav class="main-nav">
+            <nav>
                 <ul>
                     <li><a href="index.html">Home</a></li>
                     <li><a href="about.html">About Us</a></li>
                     <li><a href="products.html">Products</a></li>
-                    <li><a href="enquiry.html">Enquiry</a></li>
+                    <li><a href="enquiry.html" class="active">Enquiry</a></li>
                     <li><a href="contact.html">Contact</a></li>
                 </ul>
             </nav>
-            <div class="header-icons">
-                <a href="#" class="search-icon">🔍</a>
-                <a href="#" class="account-icon">👤</a>
-                <a href="#" class="cart-icon">🛒</a>
-            </div>
         </div>
     </header>
 
     <main>
-        <section class="enquiry-form-section">
-            <div class="container">
-                <h1 class="section-title">Product & Service Enquiry 📝</h1>
-                <p>Have a question about our products or services? Fill out the form below and we'll get back to you as soon as possible.</p>
-                <form action="#" method="post" class="enquiry-form">
-                    <label for="name">Your Name:</label>
-                    <input type="text" id="name" name="name" required>
-                    
-                    <label for="email">Your Email:</label>
-                    <input type="email" id="email" name="email" required>
+        <div class="container">
+            <section class="hero">
+                <h1>Make an Enquiry</h1>
+                <p>Have questions about our products or services? We're here to help! Fill out the form below and we'll get back to you as soon as possible.</p>
+            </section>
 
-                    <label for="subject">Subject:</label>
-                    <input type="text" id="subject" name="subject" required>
-                    
-                    <label for="message">Message:</label>
-                    <textarea id="message" name="message" rows="6" required></textarea>
-                    
-                    <button type="submit" class="submit-button">Send Enquiry</button>
-                </form>
-            </div>
-        </section>
+            <section class="enquiry-form">
+                <div class="form-container">
+                    <h2>Product Enquiry Form</h2>
+                    <form>
+                        <div class="form-group">
+                            <label for="name">Full Name *</label>
+                            <input type="text" id="name" name="name" required>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="email">Email Address *</label>
+                            <input type="email" id="email" name="email" required>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="phone">Phone Number</label>
+                            <input type="tel" id="phone" name="phone">
+                        </div>
+
+                        <div class="form-group">
+                            <label for="product">Product of Interest</label>
+                            <select id="product" name="product">
+                                <option value="">Select a product category</option>
+                                <option value="dresses">Dresses</option>
+                                <option value="jackets">Jackets & Outerwear</option>
+                                <option value="jumpsuits">Jumpsuits</option>
+                                <option value="accessories">Accessories</option>
+                                <option value="shoes">Shoes</option>
+                                <option value="bags">Bags</option>
+                                <option value="other">Other</option>
+                            </select>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="budget">Budget Range</label>
+                            <select id="budget" name="budget">
+                                <option value="">Select budget range</option>
+                                <option value="under-50">Under $50</option>
+                                <option value="50-100">$50 - $100</option>
+                                <option value="100-200">$100 - $200</option>
+                                <option value="200-500">$200 - $500</option>
+                                <option value="over-500">Over $500</option>
+                            </select>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="occasion">Occasion</label>
+                            <select id="occasion" name="occasion">
+                                <option value="">Select occasion</option>
+                                <option value="casual">Casual Wear</option>
+                                <option value="business">Business/Professional</option>
+                                <option value="formal">Formal Events</option>
+                                <option value="party">Party/Night Out</option>
+                                <option value="wedding">Wedding</option>
+                                <option value="vacation">Vacation/Travel</option>
+                                <option value="other">Other</option>
+                            </select>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="size">Size</label>
+                            <select id="size" name="size">
+                                <option value="">Select size</option>
+                                <option value="xs">XS</option>
+                                <option value="s">S</option>
+                                <option value="m">M</option>
+                                <option value="l">L</option>
+                                <option value="xl">XL</option>
+                                <option value="xxl">XXL</option>
+                            </select>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="message">Additional Details *</label>
+                            <textarea id="message" name="message" rows="5" placeholder="Please provide any additional details about your enquiry, specific requirements, or questions you may have..." required></textarea>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="newsletter">
+                                <input type="checkbox" id="newsletter" name="newsletter">
+                                Subscribe to our newsletter for updates on new arrivals and exclusive offers
+                            </label>
+                        </div>
+
+                        <button type="submit" class="btn btn-primary">Submit Enquiry</button>
+                    </form>
+                </div>
+
+                <div class="enquiry-info">
+                    <h3>Why Choose StyleHub?</h3>
+                    <ul>
+                        <li>✓ Personalized styling advice</li>
+                        <li>✓ High-quality, curated fashion pieces</li>
+                        <li>✓ Competitive pricing</li>
+                        <li>✓ Fast response time (within 24 hours)</li>
+                        <li>✓ Expert fashion consultants</li>
+                        <li>✓ Custom sizing available</li>
+                    </ul>
+
+                    <div class="response-time">
+                        <h4>Response Time</h4>
+                        <p>We typically respond to enquiries within <strong>24 hours</strong> during business days. For urgent requests, please call us directly.</p>
+                    </div>
+                </div>
+            </section>
+        </div>
     </main>
 
-    <footer>
-        <div class="footer-container">
-            <div class="footer-section">
-                <h4>Customer Service</h4>
-                <ul>
-                    <li><a href="#">FAQs</a></li>
-                    <li><a href="#">Shipping & Returns</a></li>
-                    <li><a href="contact.html">Contact Us</a></li>
-                </ul>
-            </div>
-            <div class="footer-section social-media">
-                <h4>Follow Us</h4>
-                <div class="social-icons">
-                    <a href="https://www.facebook.com" aria-label="Facebook"><img src="facebook.jpeg" alt="Facebook Icon" width="24" height="24"></a>
-                    <a href="https://www.instagram.com" aria-label="Instagram"><img src="instragram.jpeg" alt="Instagram Icon" width="24" height="24"></a>
-                    <a href="https://www.tiktok.com" aria-label="TikTok"><img src="tiktok.jpeg" alt="TikTok Icon" width="24" height="24"></a>
-                </div>
-            </div>
-            <div class="footer-section">
-                <h4>Policies</h4>
-                <ul>
-                    <li><a href="#">Privacy Policy</a></li>
-                    <li><a href="#">Terms of Service</a></li>
-                </ul>
-            </div>
-        </div>
-        <div class="footer-bottom">
-            <p>&copy; 2025 StyleHub Boutique. All Rights Reserved.</p>
-        </div>
+    <!-- Footer -->
+    <footer class="footer">
+        <p>© 2025 StyleHub Boutique. All Rights Reserved.</p>
     </footer>
 </body>
 </html>
