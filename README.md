@@ -92,12 +92,41 @@ Milestone: Live e-commerce website with full functionality
 #![fram4](https://github.com/user-attachments/assets/db6fe4f9-5f7c-47b1-b94a-7517a68df2f3)
 #![fram5](https://github.com/user-attachments/assets/24fc94f8-ea53-441a-b2a1-87d51ba77ad3)
 
+## Project Structure
+
+```
+stylehub-boutique/
+├── css/
+│   └── style.css              # External CSS stylesheet
+├── images/                    # Product and team images
+│   ├── dress.jpeg
+│   ├── shoe.jpeg
+│   ├── bag.jpeg
+│   ├── jumpsuit.jpeg
+│   ├── earring.jpeg
+│   ├── jacket.jpeg
+│   ├── pic1.jpeg
+│   ├── pic2.jpeg
+│   └── pic3.jpeg
+├─├── index.html                 # Homepage
+├── about.html                 # About Us page
+├── products.html              # Products catalog page
+
+
 ## the screenshot
-<img width="1571" height="816" alt="Screenshot 2025-09-26 234958" src="https://github.com/user-attachments/assets/c83b4adf-6b00-450a-b0c5-ef99ea183371" />
+<img width="1571" height="816" alt="Screenshot 2025-09-26 234958" src="https://github.com/user-attachments/assets/249f6d67-da74-4b17-89ec-548ae4b525f3" />
+<img width="1779" height="906" alt="Screenshot 2025-09-26 234940" src="https://github.com/user-attachments/assets/38cf0dc2-8010-4c50-93c3-e55fef9d6b88" />
+<img width="1739" height="678" alt="Screenshot 2025-09-26 235014" src="https://github.com/user-attachments/assets/9ba271dc-9597-49ec-85db-fbb761464ff9" />
+<img width="1761" height="826" alt="Screenshot 2025-09-26 235026" src="https://github.com/user-attachments/assets/682087f0-f84b-4e1a-90da-249a0b8c7acd" />
+<img width="1709" height="812" alt="Screenshot 2025-09-26 235041" src="https://github.com/user-attachments/assets/2d69c888-5e09-4b52-8781-076e3e9c7cbc" />
+<img width="1011" height="878" alt="Screenshot 2025-09-26 235052" src="https://github.com/user-attachments/assets/80308d90-e97c-4e0d-a8d5-412a05ffa30d" />
+
+The implementation supports all modern browsers:
+
+- Chrome 90+
 
 
-
-## the change log
+## The change log
 ### 📝 TYPOGRAPHY IMPROVEMENTS
 
 #### Typography Scale Implementation
@@ -159,6 +188,46 @@ h2 {
 - **DEFINED**: Mobile (default): 0px - 767px
 - **DEFINED**: Tablet: 768px - 1023px
 - **DEFINED**: Desktop: 1024px and above
+
+###  WISHLIST FEATURES
+- **ADDED**: Functional "Add to Wishlist" buttons on all product cards
+- **IMPLEMENTED**: Wishlist counter that updates dynamically when items are added
+- **CREATED**: Wishlist modal with saved items display and management options
+- **ADDED**: Visual feedback when items are added to wishlist (button state changes)
+- **INCLUDED**: Remove item functionality within wishlist modal
+
+- ###  NEW PAGES ADDED
+- **ADDED**: `enquiry.html` page with a detailed product enquiry form and relevant information.
+- **ADDED**: `contact.html` page with comprehensive contact information, a message form, store location details, business hours, and FAQs.
+
+###  NAVIGATION UPDATES
+- **UPDATED**: Navigation links in `index.html`, `about.html`, `products.html`, `enquiry.html`, and `contact.html` to include the new pages.
+- **IMPROVED**: Active state styling for navigation links on the new pages.
+
+###  STYLING FOR NEW PAGES
+- **APPLIED**: Consistent styling from `style.css` to the new `enquiry.html` and `contact.html` pages.
+- **DESIGNED**: Specific form layouts and information sections for optimal user experience on these new pages.
+
+#### Header and Navigation Updates
+- **CORRECTED**: Header background changed from (#222) to  (#a09494)
+- **UPDATED**: Navigation text color adjusted to match assignment specifications
+- **MAINTAINED**: Original color scheme for hover states (#ff4081)
+- **IMPROVED**: Box shadow reduced for subtler appearance (0 2px 4px rgba(0,0,0,0.05))
+
+#### Background and Container Adjustments
+- **CHANGED**: Body background color from #fdfdfd to #f9f9f9 to match assignment
+- **ADDED**: Container max-width of 1100px with proper centering
+- **STANDARDIZED**: Consistent padding and margin values
+
+#### Typography Refinements
+- **UPDATED**: Heading colors to use #2c2c2c instead of #222
+- **ADDED**: Proper text-align center for main headings
+- **ENHANCED**: Border-bottom styling for h2 elements with #f0f0f0 color
+- **MAINTAINED**: Font family as 'Poppins' throughout
+
+##references 
+" https://fonts.google.com/."   
+"https://www.w3schools.com/."
 
 
 
