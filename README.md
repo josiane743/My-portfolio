@@ -287,10 +287,10 @@ h2 {
 
 ### References ## 
 
-#W3Schools. (2025) HTML and CSS tutorials. Available at: https://www.w3schools.com/
-#Pinterest. (2025) Fashion website UI inspiration. Available at: https://www.pinterest.com/
-#Google Fonts. (2025) Poppins Typeface. Available at: https://fonts.google.com/specimen/Poppins
-#Typography: Poppins was selected for a clean, modern look (Google Fonts, 2025), while Aptos was tested for potential body text due to its versatility (Microsoft, 2023).
+# W3Schools. (2025) HTML and CSS tutorials. Available at: https://www.w3schools.com/
+# Pinterest. (2025) Fashion website UI inspiration. Available at: https://www.pinterest.com/
+# Google Fonts. (2025) Poppins Typeface. Available at: https://fonts.google.com/specimen/Poppins
+# Typography: Poppins was selected for a clean, modern look (Google Fonts, 2025), while Aptos was tested for potential body text due to its versatility (Microsoft, 2023).
 
 https://github.com/josiane743/My-portfolio.git
 
