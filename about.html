@@ -1,17 +1,195 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <!-- Metadata -->
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>About Us | StyleHub Boutique</title>
+    <title>About StyleHub Boutique | Our Fashion Story & Team</title>
+    <meta name="description" content="Learn about StyleHub Boutique's mission, our passionate team, and our commitment to sustainable fashion and quality craftsmanship.">
+    <meta name="keywords" content="about StyleHub, fashion team, boutique story, sustainable fashion, clothing quality">
     
-    <!-- Link to CSS file -->
-    <link rel="stylesheet" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+
+    <style>
+        /* Additional styles for about page */
+        .about-hero {
+            background: linear-gradient(135deg, rgba(255,64,129,0.1) 0%, rgba(255,64,129,0.05) 100%);
+            padding: 80px 20px;
+            text-align: center;
+        }
+
+        .mission-vision {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 30px;
+            margin: 50px auto;
+            max-width: 1200px;
+            padding: 0 20px;
+        }
+
+        .mission-card, .vision-card {
+            background: white;
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+            text-align: center;
+        }
+
+        .mission-card i, .vision-card i {
+            font-size: 40px;
+            color: #ff4081;
+            margin-bottom: 20px;
+        }
+
+        .timeline {
+            position: relative;
+            max-width: 800px;
+            margin: 50px auto;
+            padding: 0 20px;
+        }
+
+        .timeline::before {
+            content: '';
+            position: absolute;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 2px;
+            height: 100%;
+            background: #ff4081;
+        }
+
+        .timeline-item {
+            margin: 40px 0;
+            position: relative;
+            width: 50%;
+            padding: 20px;
+        }
+
+        .timeline-item:nth-child(odd) {
+            left: 0;
+        }
+
+        .timeline-item:nth-child(even) {
+            left: 50%;
+        }
+
+        .timeline-content {
+            background: white;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 3px 10px rgba(0,0,0,0.1);
+            position: relative;
+        }
+
+        .timeline-content::after {
+            content: '';
+            position: absolute;
+            top: 20px;
+            width: 20px;
+            height: 20px;
+            background: #ff4081;
+            border-radius: 50%;
+        }
+
+        .timeline-item:nth-child(odd) .timeline-content::after {
+            right: -40px;
+        }
+
+        .timeline-item:nth-child(even) .timeline-content::after {
+            left: -40px;
+        }
+
+        .stats-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 30px;
+            margin: 50px auto;
+            max-width: 1000px;
+            padding: 0 20px;
+        }
+
+        .stat-card {
+            text-align: center;
+            padding: 30px 20px;
+            background: white;
+            border-radius: 10px;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+        }
+
+        .stat-number {
+            font-size: 3em;
+            font-weight: bold;
+            color: #ff4081;
+            margin-bottom: 10px;
+        }
+
+        .team-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 30px;
+            margin: 50px auto;
+            max-width: 1200px;
+            padding: 0 20px;
+        }
+
+        .team-member {
+            text-align: center;
+            background: white;
+            padding: 30px 20px;
+            border-radius: 10px;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+            transition: transform 0.3s;
+        }
+
+        .team-member:hover {
+            transform: translateY(-5px);
+        }
+
+        .team-member img {
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            object-fit: cover;
+            margin-bottom: 15px;
+            border: 3px solid #ff4081;
+        }
+
+        .team-social {
+            display: flex;
+            justify-content: center;
+            gap: 15px;
+            margin-top: 15px;
+        }
+
+        .team-social a {
+            color: #666;
+            transition: color 0.3s;
+        }
+
+        .team-social a:hover {
+            color: #ff4081;
+        }
+
+        @media (max-width: 768px) {
+            .timeline::before {
+                left: 20px;
+            }
+            
+            .timeline-item {
+                width: 100%;
+                left: 0 !important;
+                padding-left: 50px;
+            }
+            
+            .timeline-content::after {
+                left: -30px !important;
+            }
+        }
+    </style>
 </head>
 <body>
 
-    <!-- Header & Navigation Section -->
     <header class="header">
         <div class="container nav-container">
             <a href="index.html" class="logo">StyleHub 💎</a>
@@ -27,59 +205,211 @@
         </div>
     </header>
 
-    <!-- Main Content Section -->
     <main class="container">
-        <h1>About StyleHub Boutique  backstory</h1>
-
-        <!-- History Section -->
-        <section class="about-section">
-            <h2>Our Story 📜</h2>
-            <p>StyleHub Boutique was established in 2019 as a family-owned fashion retailer specializing in contemporary clothing and accessories for young professionals aged 25-40. Starting with a single storefront in the city center, the business has grown to serve a loyal customer base of over 2,000 regular shoppers. The store focuses on curating high-quality, affordable fashion pieces from emerging designers and established brands.</p>
+        <section class="about-hero">
+            <h1>Our Fashion Journey</h1>
+            <p>From a small boutique to a beloved fashion destination</p>
         </section>
 
-        <!-- Mission Statement Section -->
-        <section class="about-section">
-            <h2>Our Mission 🎯</h2>
-            <p>"To empower individuals to express their unique style through carefully curated, high-quality fashion pieces that blend contemporary trends with timeless elegance, while providing exceptional customer service both in-store and online."</p>
+        <section class="mission-vision">
+            <div class="mission-card">
+                <i class="fas fa-bullseye"></i>
+                <h2>Our Mission</h2>
+                <p>To make high-quality, sustainable fashion accessible to everyone while empowering confidence through style.</p>
+            </div>
+            <div class="vision-card">
+                <i class="fas fa-eye"></i>
+                <h2>Our Vision</h2>
+                <p>To become South Africa's most trusted fashion brand, known for quality, sustainability, and exceptional customer experience.</p>
+            </div>
         </section>
 
-        <!-- Vision Statement Section -->
-        <section class="about-section">
-            <h2>Our Vision 🌟</h2>
-            <p>"To become the premier destination for fashion-forward individuals seeking distinctive, quality clothing and accessories, while building a sustainable retail business that supports both local and global fashion communities."</p>
+        <section class="stats-grid">
+            <div class="stat-card">
+                <div class="stat-number" data-target="5">0</div>
+                <h3>Years Experience</h3>
+            </div>
+            <div class="stat-card">
+                <div class="stat-number" data-target="10000">0</div>
+                <h3>Happy Customers</h3>
+            </div>
+            <div class="stat-card">
+                <div class="stat-number" data-target="500">0</div>
+                <h3>Products</h3>
+            </div>
+            <div class="stat-card">
+                <div class="stat-number" data-target="50">0</div>
+                <h3>Designers</h3>
+            </div>
         </section>
 
-        <!-- Team Members Section -->
-         <section class="about-section">
+        <section>
+            <h2>Our Story</h2>
+            <div class="timeline">
+                <div class="timeline-item">
+                    <div class="timeline-content">
+                        <h3>2020 - The Beginning</h3>
+                        <p>StyleHub Boutique opened its doors in Cape Town with a small collection of locally designed pieces.</p>
+                    </div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-content">
+                        <h3>2021 - First Expansion</h3>
+                        <p>We launched our online store and expanded our product range to include international designers.</p>
+                    </div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-content">
+                        <h3>2022 - Sustainability Focus</h3>
+                        <p>Committed to sustainable fashion by partnering with eco-friendly manufacturers and local artisans.</p>
+                    </div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-content">
+                        <h3>2023 - Award Winning</h3>
+                        <p>Received the "Best Fashion Retailer" award and expanded to Johannesburg and Durban.</p>
+                    </div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-content">
+                        <h3>2024 - Digital Innovation</h3>
+                        <p>Launched our mobile app and virtual try-on features to enhance the shopping experience.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="about-section">
             <h2>Meet the Team 👩‍💼👨‍💼</h2>
             <div class="team-grid">
                 <div class="team-member">
-                    <img src="pic 2.jpeg" alt="Founder Anna">
+                    <img src="asset/pic 2.jpg" alt="Anna Smith - Founder & Head Buyer of StyleHub Boutique">
                     <h3>Anna Smith</h3>
                     <p>Founder & Head Buyer</p>
+                    <p>With over 10 years in fashion retail, Anna leads our product selection and brand direction.</p>
+                    <div class="team-social">
+                        <a href="#"><i class="fab fa-linkedin"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                    </div>
                 </div>
                 <div class="team-member">
-                    <img src="pic 1.jpeg" alt="Stylist John">
+                    <img src="pic 1.jpg" alt="John Doe - Lead Stylist at StyleHub Boutique">
                     <h3>John Doe</h3>
                     <p>Lead Stylist</p>
+                    <p>John brings his fashion expertise from Paris and Milan to create stunning looks for our customers.</p>
+                    <div class="team-social">
+                        <a href="#"><i class="fab fa-linkedin"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-pinterest"></i></a>
+                    </div>
                 </div>
                 <div class="team-member">
-                    <img src="pic3.jpeg" alt="Manager Emily">
+                    <img src="pic3.jpg" alt="Emily Jones - Store Manager at StyleHub Boutique">
                     <h3>Emily Jones</h3>
                     <p>Store Manager</p>
+                    <p>Emily ensures every customer receives exceptional service and manages our retail operations.</p>
+                    <div class="team-social">
+                        <a href="#"><i class="fab fa-linkedin"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-facebook"></i></a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="about-section">
+            <h2>Our Values</h2>
+            <div class="features-grid" style="margin: 30px auto;">
+                <div class="feature-card">
+                    <i class="fas fa-leaf"></i>
+                    <h3>Sustainability</h3>
+                    <p>We're committed to eco-friendly practices and sustainable fashion production.</p>
+                </div>
+                <div class="feature-card">
+                    <i class="fas fa-heart"></i>
+                    <h3>Quality</h3>
+                    <p>Every piece is carefully selected for its craftsmanship and durability.</p>
+                </div>
+                <div class="feature-card">
+                    <i class="fas fa-users"></i>
+                    <h3>Community</h3>
+                    <p>We support local designers and give back to our community.</p>
+                </div>
+                <div class="feature-card">
+                    <i class="fas fa-gem"></i>
+                    <h3>Excellence</h3>
+                    <p>We strive for excellence in every aspect of our business.</p>
                 </div>
             </div>
         </section>
     </main>
 
-    <!-- Footer Section -->
     <footer class="footer">
         <div class="social-icons">
-                    <a href="https://www.facebook.com" aria-label="Facebook"><img src="facebook.jpeg" alt="Facebook Icon" width="24" height="24"></a>
-                    <a href="https://www.instagram.com" aria-label="Instagram"><img src="instragram.jpeg" alt="Instagram Icon" width="24" height="24"></a>
-                    <a href="https://www.tiktok.com" aria-label="TikTok"><img src="tiktok.jpeg" alt="TikTok Icon" width="24" height="24"></a>
-        <p>© 2025 StyleHub Boutique. All Rights Reserved.</p>
+            <a href="https://www.facebook.com" aria-label="Facebook"><i class="fab fa-facebook"></i></a>
+            <a href="https://www.instagram.com" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+            <a href="https://www.tiktok.com" aria-label="TikTok"><i class="fab fa-tiktok"></i></a>
+        </div>
+        <p>© 2025 <a href="index.html">StyleHub Boutique</a>. All Rights Reserved.</p>
     </footer>
 
+    <script>
+        // Animated counter for statistics
+        const counters = document.querySelectorAll('.stat-number');
+        const speed = 200;
+
+        const animateCounter = () => {
+            counters.forEach(counter => {
+                const target = +counter.getAttribute('data-target');
+                const count = +counter.innerText;
+                const increment = target / speed;
+
+                if (count < target) {
+                    counter.innerText = Math.ceil(count + increment);
+                    setTimeout(animateCounter, 1);
+                } else {
+                    counter.innerText = target;
+                }
+            });
+        };
+
+        // Start counter when section is in view
+        const statsSection = document.querySelector('.stats-grid');
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    animateCounter();
+                    observer.unobserve(entry.target);
+                }
+            });
+        });
+
+        observer.observe(statsSection);
+
+        // Team member hover effects
+        document.querySelectorAll('.team-member').forEach(member => {
+            member.addEventListener('mouseenter', function() {
+                this.style.transform = 'translateY(-10px)';
+                this.style.boxShadow = '0 15px 30px rgba(0,0,0,0.2)';
+            });
+
+            member.addEventListener('mouseleave', function() {
+                this.style.transform = 'translateY(-5px)';
+                this.style.boxShadow = '0 5px 15px rgba(0,0,0,0.1)';
+            });
+        });
+
+        // Smooth scrolling for timeline
+        const timelineItems = document.querySelectorAll('.timeline-item');
+        timelineItems.forEach(item => {
+            item.addEventListener('click', function() {
+                this.querySelector('.timeline-content').style.backgroundColor = '#f8f9fa';
+                setTimeout(() => {
+                    this.querySelector('.timeline-content').style.backgroundColor = '';
+                }, 1000);
+            });
+        });
+    </script>
 </body>
 </html>

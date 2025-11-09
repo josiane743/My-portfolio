@@ -1,246 +1,109 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <!-- 5.2 Basic HTML Structure: Metadata -->
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Contact Us | StyleHub Boutique</title>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Contact Us | StyleHub Boutique</title>
+  <meta name="description" content="Contact StyleHub Boutique for general enquiries, order support, and partnership opportunities. Visit us in Cape Town or send us a message.">
 
-    <!-- 4.2 File and Folder Structure: Linking to the CSS file in the 'css' folder. -->
-    <style>
-        /* 
-            NOTE: Per instruction 4.2, these styles should be in a separate file located at 'css/style.css'.
-            They are included here for demonstration.
-        */
-        
-        /* --- General Styling --- */
-        body {
-            font-family: sans-serif;
-            margin: 0;
-            background-color: #fcfcfc;
-            color: #333;
-        }
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 
-        .container {
-            max-width: 1000px;
-            margin: 0 auto;
-            padding: 20px;
-        }
-        
-        /* --- Header & Navigation (5.4) --- */
-        .header {
-            background-color: #fff;
-            box-shadow: 0 1px 4px rgba(0,0,0,0.08);
-            padding: 10px 0;
-        }
-
-        .nav-container {
-            display: flex; /* Aligns items horizontally */
-            justify-content: space-between; /* Pushes logo and nav links apart */
-            align-items: center; /* Vertically centers items */
-        }
-        
-        .logo {
-            font-size: 24px;
-            font-weight: bold;
-            color: #333;
-            text-decoration: none;
-        }
-
-        .nav-links {
-            list-style: none;
-            display: flex;
-            gap: 25px; /* Space between links */
-            margin: 0;
-            padding: 0;
-        }
-
-        .nav-links a {
-            text-decoration: none;
-            color: #555;
-            font-weight: 500;
-        }
-        
-        /* --- Main Content Sections (5.3) --- */
-        main h1 {
-            text-align: center;
-            font-size: 32px;
-            margin-bottom: 40px;
-        }
-        
-        .contact-wrapper {
-            display: flex; /* Aligns locations and form horizontally */
-            gap: 40px;
-        }
-        
-        .locations, .contact-form {
-            flex: 1; /* Each takes up half the space */
-        }
-        
-        h2 {
-            border-bottom: 2px solid #f0f0f0;
-            padding-bottom: 10px;
-            margin-bottom: 20px;
-        }
-        
-        .location {
-            margin-bottom: 30px;
-        }
-        
-        .location p {
-            margin: 5px 0;
-        }
-        
-        /* --- Map Styling --- */
-        .map-frame {
-            width: 100%;
-            height: 200px;
-            border: none;
-            border-radius: 8px;
-            margin-top: 10px;
-        }
-        
-        /* --- Form Styling --- */
-        .form-group {
-            margin-bottom: 15px;
-        }
-        
-        .form-group label {
-            display: block;
-            margin-bottom: 5px;
-        }
-        
-        .form-group input,
-        .form-group textarea {
-            width: 100%;
-            padding: 10px;
-            border: 1px solid #ddd;
-            border-radius: 5px;
-        }
-
-        /* --- Clickable Button Styling --- */
-        .submit-button {
-            background-color: #333;
-            color: #fff;
-            padding: 12px 20px;
-            border: none;
-            border-radius: 5px;
-            font-size: 16px;
-            cursor: pointer; /* Shows a pointer on hover */
-            width: 100%;
-        }
-        
-        /* --- Footer Styling --- */
-        .footer {
-            background-color: #333;
-            color: #fff;
-            text-align: center;
-            padding: 20px;
-            margin-top: 50px;
-        }
-    </style>
+  <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-
-    <!-- 5.2 Header Section -->
-    <header class="header">
+<header class="header">
         <div class="container nav-container">
-            <!-- Logo -->
             <a href="index.html" class="logo">StyleHub 💎</a>
-            
-            <!-- 5.4 Navigation Menu -->
             <nav>
                 <ul class="nav-links">
                     <li><a href="index.html">Home</a></li>
                     <li><a href="about.html">About Us</a></li>
-                    <li><a href="products.html">Products</a></li>
+                    <li><a href="products.html">Product</a></li>
                     <li><a href="enquiry.html">Enquiry</a></li>
-                    <li><a href="contact.html">Contact</a></li>
+                    <li><a href="contact.html"class="active">Conta</a></li>
                 </ul>
             </nav>
         </div>
     </header>
 
-    <!-- 5.2 Main Content Section -->
-    <main class="container">
-    
-        <h1>Get In Touch With Us 💌</h1>
-        
-        <div class="contact-wrapper">
-        
-            <!-- Store Locations Section (as per instructions for multiple locations) -->
-            <section class="locations">
-                <h2>Our Stores 🏢</h2>
-                
-                <!-- Main Boutique Location -->
-                <div class="location">
-                    <h3>Main Boutique (Johannesburg)</h3>
-                    <p>📍 123 Fashion Ave, Sandton</p>
-                    <p>📞 Phone: +27 11 234 5678</p>
-                    <p>✉️ Email: sandton@stylehub.com</p>
-                    <iframe 
-                        class="map-frame"
-                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3583.447530691884!2d28.05163331502766!3d-26.08443398349074!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1e95734200632523%3A0x8683b5443d3b4e9f!2sSandton%20City!5e0!3m2!1sen!2sza!4v1678886400000!5m2!1sen!2sza" 
-                        allowfullscreen="" 
-                        loading="lazy">
-                    </iframe>
-                </div>
-                
-                <!-- Pop-up Store Location -->
-                <div class="location">
-                    <h3>Pop-up Store (Cape Town)</h3>
-                    <p>📍 45 Market St, V&A Waterfront</p>
-                    <p>📞 Phone: +27 21 987 6543</p>
-                    <p>✉️ Email: capetown@stylehub.com</p>
-                    <iframe 
-                        class="map-frame"
-                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3310.366746430981!2d18.4192663152123!3d-33.90520398063857!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1dcc6768a44c299b%3A0x637b7194f5765a6b!2sV%26A%20Waterfront!5e0!3m2!1sen!2sza!4v1678886500000!5m2!1sen!2sza" 
-                        allowfullscreen="" 
-                        loading="lazy">
-                    </iframe>
-                </div>
-            </section>
-            
-            <!-- Contact Form Section -->
-            <section class="contact-form">
-                <h2>Send a Message ✍️</h2>
-                <form action="#" method="post">
-                    <!-- Name Input -->
-                    <div class="form-group">
-                        <label for="name">Your Name</label>
-                        <input type="text" id="name" name="name" required>
-                    </div>
-                    
-                    <!-- Email Input -->
-                    <div class="form-group">
-                        <label for="email">Your Email</label>
-                        <input type="email" id="email" name="email" required>
-                    </div>
-                    
-                    <!-- Subject Input -->
-                    <div class="form-group">
-                        <label for="subject">Subject</label>
-                        <input type="text" id="subject" name="subject" required>
-                    </div>
-                    
-                    <!-- Message Textarea -->
-                    <div class="form-group">
-                        <label for="message">Your Message</label>
-                        <textarea id="message" name="message" rows="5" required></textarea>
-                    </div>
-                    
-                    <!-- 5.6 Clickable Submit Button -->
-                    <button type="submit" class="submit-button">Send 🚀</button>
-                </form>
-            </section>
-            
+  <main class="container">
+    <section class="contact-section" aria-labelledby="contact-heading">
+      <h1 id="contact-heading">Get in Touch</h1>
+      <p>Use the form below for general enquiries, order support, or partnership messages.</p>
+
+      <form id="contact-form" action="#" method="post" novalidate>
+        <div class="form-group">
+          <label for="name">Full name <span class="required">*</span></label>
+          <input id="name" name="name" type="text" required minlength="2" placeholder="Your full name" />
+          <div class="sr-only" id="name-err" aria-live="polite"></div>
         </div>
-    </main>
 
-    <!-- 5.2 Footer Section -->
-    <footer class="footer">
-        <p>© 2025 StyleHub Boutique. All Rights Reserved.</p>
-    </footer>
+        <div class="form-group">
+          <label for="email">Email <span class="required">*</span></label>
+          <input id="email" name="email" type="email" required placeholder="you@example.com" />
+          <div class="sr-only" id="email-err" aria-live="polite"></div>
+        </div>
 
+        <div class="form-group">
+          <label for="type">Message type <span class="required">*</span></label>
+          <select id="type" name="type" required>
+            <option value="">Select one</option>
+            <option value="general">General Enquiry</option>
+            <option value="order">Order Query</option>
+            <option value="partnership">Partnership</option>
+          </select>
+          <div class="sr-only" id="type-err" aria-live="polite"></div>
+        </div>
+
+        <div class="form-group">
+          <label for="message">Message <span class="required">*</span></label>
+          <textarea id="message" name="message" rows="6" required minlength="10" placeholder="Tell us about your enquiry..."></textarea>
+          <div class="sr-only" id="message-err" aria-live="polite"></div>
+        </div>
+
+        <div class="form-actions">
+          <button type="submit" class="submit-button"><i class="fas fa-paper-plane"></i> Send Message</button>
+          <button type="reset" class="btn btn-secondary"><i class="fas fa-redo"></i> Clear</button>
+        </div>
+
+        <div id="form-feedback" class="feedback" aria-live="polite"></div>
+      </form>
+    </section>
+
+    <section class="contact-details" aria-labelledby="contact-details-heading">
+      <h2 id="contact-details-heading">Visit or call us</h2>
+      <div class="contact-details-grid">
+        <div class="contact-map">
+          <iframe
+            src="https://www.google.com/maps?q=Cape%20Town%20CBD&output=embed"
+            title="StyleHub Boutique location on map">
+          </iframe>
+        </div>
+        <div class="contact-address">
+          <address>
+            <strong>StyleHub Boutique</strong><br>
+            12 Market Lane<br>
+            Cape Town CBD, 8001<br>
+            South Africa
+          </address>
+          <p>
+            <strong>Phone</strong><br>
+            <a href="tel:+27212345678">+27 21 234 5678</a>
+          </p>
+          <p>
+            <strong>Email</strong><br>
+            <a href="mailto:contact@stylehub.example">contact@stylehub.example</a>
+          </p>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <p>© 2025 StyleHub Boutique. All rights reserved.</p>
+  </footer>
+
+  <script src="main.js"></script>
 </body>
 </html>

@@ -1,75 +1,92 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <!-- Metadata -->
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>StyleHub Boutique | High-Quality Fashion</title>
+    <meta name="description" content="Discover contemporary, timeless fashion at StyleHub Boutique. Shop our curated collection of dresses, shoes, and accessories.">
     
-    <!-- Link to CSS file -->
-    <link rel="stylesheet" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-    <!-- Header & Navigation Section -->
     <header class="header">
-        <div class="container nav-container">
-            <!-- Logo -->
-            <a href="index.html" class="logo">StyleHub 💎</a>
-            
-            <!-- Navigation Menu -->
-            <nav>
-                <ul class="nav-links">
-                    <li><a href="index.html" class="active">Home</a></li>
-                    <li><a href="about.html">About Us</a></li>
-                    <li><a href="products.html">Products</a></li>
-                    <li><a href="enquiry.html">Enquiry</a></li>
-                    <li><a href="contact.html">Contact</a></li>
-                </ul>
-            </nav>
-        </div>
-    </header>
+  <div class="container nav-container">
+    <a href="index.html" class="logo">StyleHub 💎</a>
 
-    <!-- Main Content Section -->
-    <main>
-        <!-- Hero section with background image and Call-to-Action -->
-        <section class="hero">
-            <h1>Contemporary Style, Timeless Elegance</h1>
-            <p>Discover curated fashion pieces that empower you to express your unique style. High-quality, affordable, and always on-trend.</p>
-            <a href="products.html" class="cta-button">Shop New Arrivals ✨</a>
-        </section>
+    <nav>
+      <ul class="nav-links">
+        <li><a href="index.html" class="active">Home</a></li>
+        <li><a href="about.html">About Us</a></li>
+        <li><a href="products.html">Products</a></li>
+        <li><a href="enquiry.html">Enquiry</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+  </div>
+</header>
 
-        <div class="container">
-            <!-- Featured Products Section -->
-            <h2>Featured Products</h2>
-            <div class="product-grid">
-                <!-- Product 1 -->
-                <div class="product-card">
-                    <img src="dress.jpeg" alt="Dress">
-                    <h3>Elegant Evening Dress</h3>
-                    <p class="product-price">R1299.99</p>
-                </div>
-                <!-- Product 2 -->
-                <div class="product-card">
-                    <img src="shoe.jpeg" alt="shoe">
-                    <h3>Trendy Sneaker</h3>
-                    <p class="product-price">R499.99</p>
-                </div>
-                <!-- Product 3 -->
-                <div class="product-card">
-                    <img src="bag.jpeg" alt="bag">
-                    <h3>Classic leader bag</h3>
-                    <p class="product-price">R899.99</p>
-                </div>
-            </div>
-        </div>
-    </main>
+<section class="hero">
+  <h1>Contemporary Style, Timeless Elegance</h1>
+  <p>Discover curated fashion pieces that empower your confidence — high-quality, affordable, and always on-trend.</p>
 
-    <!-- Footer Section -->
+  <!-- ✅ This button works because it’s a link -->
+  <a href="products.html" class="cta-button">
+    <i class="fas fa-shopping-bag"></i> Shop New Arrivals
+  </a>
+</section>
+
+<main class="container">
+  <h2>Featured Products</h2>
+
+  <div class="product-grid">
+    <div class="product-card">
+      <img src="dress.jpeg" alt="Elegant Evening Dress">
+      <h3>Elegant Evening Dress</h3>
+      <p class="product-price">R1299.99</p>
+      <button class="add-wishlist"><i class="fas fa-heart"></i> Add to Wishlist</button>
+    </div>
+
+    <div class="product-card">
+      <img src="shoe.jpeg" alt="Trendy Sneaker">
+      <h3>Trendy Sneaker</h3>
+      <p class="product-price">R499.99</p>
+      <button class="add-wishlist"><i class="fas fa-heart"></i> Add to Wishlist</button>
+    </div>
+
+    <div class="product-card">
+      <img src="bag.jpeg" alt="Classic Leather Bag">
+      <h3>Classic Leather Bag</h3>
+      <p class="product-price">R899.99</p>
+      <button class="add-wishlist"><i class="fas fa-heart"></i> Add to Wishlist</button>
+    </div>
+  </div>
+</main>
+
+<!-- ✅ Add this JavaScript at the END of your body -->
+<script>
+  // Run this after the page loads
+  document.addEventListener("DOMContentLoaded", function () {
+    // Make all "Add to Wishlist" buttons work
+    document.querySelectorAll(".add-wishlist").forEach(button => {
+      button.addEventListener("click", () => {
+        button.innerHTML = '<i class="fas fa-heart"></i> Added!';
+        button.style.backgroundColor = '#ff4081';
+        button.style.color = '#fff';
+        alert("💖 Item added to your wishlist!");
+      });
+    });
+  });
+</script>
+
+
     <footer class="footer">
-        <p>© 2025 StyleHub Boutique. All Rights Reserved.</p>
+        <p>© 2025 <a href="index.html">StyleHub Boutique</a>. All Rights Reserved.</p>
     </footer>
 
+    <script src="main.js" defer></script>
 </body>
 </html>
-
