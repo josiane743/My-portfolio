@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+<<<<<<< HEAD
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Enquiry | StyleHub Boutique</title>
@@ -22,11 +23,32 @@
                     <li><a href="about.html"class=>About us</a></li>
                     <li><a href="products.html">Product</a></li>
                     <li><a href="enquiry.html"class="active">Enquiry</a></li>
+=======
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Enquiry | StyleHub Boutique</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="logo">
+                <h1>StyleHub</h1>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="products.html">Products</a></li>
+                    <li><a href="enquiry.html" class="active">Enquiry</a></li>
+>>>>>>> 020b4d0cc79710f9f031e2cc33f2f3ad0e65b3a4
                     <li><a href="contact.html">Contact</a></li>
                 </ul>
             </nav>
         </div>
     </header>
+<<<<<<< HEAD
     
   <main class="container">
     <h1>Product & Service Enquiries 🙋‍♀️</h1>
@@ -79,5 +101,127 @@
   </footer>
 
   <script src="main.js"></script>
+=======
+
+    <main>
+        <div class="container">
+            <section class="hero">
+                <h1>Make an Enquiry</h1>
+                <p>Have questions about our products or services? We're here to help! Fill out the form below and we'll get back to you as soon as possible.</p>
+            </section>
+
+            <section class="enquiry-form">
+                <div class="form-container">
+                    <h2>Product Enquiry Form</h2>
+                    <form>
+                        <div class="form-group">
+                            <label for="name">Full Name *</label>
+                            <input type="text" id="name" name="name" required>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="email">Email Address *</label>
+                            <input type="email" id="email" name="email" required>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="phone">Phone Number</label>
+                            <input type="tel" id="phone" name="phone">
+                        </div>
+
+                        <div class="form-group">
+                            <label for="product">Product of Interest</label>
+                            <select id="product" name="product">
+                                <option value="">Select a product category</option>
+                                <option value="dresses">Dresses</option>
+                                <option value="jackets">Jackets & Outerwear</option>
+                                <option value="jumpsuits">Jumpsuits</option>
+                                <option value="accessories">Accessories</option>
+                                <option value="shoes">Shoes</option>
+                                <option value="bags">Bags</option>
+                                <option value="other">Other</option>
+                            </select>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="budget">Budget Range</label>
+                            <select id="budget" name="budget">
+                                <option value="">Select budget range</option>
+                                <option value="under-50">Under $50</option>
+                                <option value="50-100">$50 - $100</option>
+                                <option value="100-200">$100 - $200</option>
+                                <option value="200-500">$200 - $500</option>
+                                <option value="over-500">Over $500</option>
+                            </select>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="occasion">Occasion</label>
+                            <select id="occasion" name="occasion">
+                                <option value="">Select occasion</option>
+                                <option value="casual">Casual Wear</option>
+                                <option value="business">Business/Professional</option>
+                                <option value="formal">Formal Events</option>
+                                <option value="party">Party/Night Out</option>
+                                <option value="wedding">Wedding</option>
+                                <option value="vacation">Vacation/Travel</option>
+                                <option value="other">Other</option>
+                            </select>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="size">Size</label>
+                            <select id="size" name="size">
+                                <option value="">Select size</option>
+                                <option value="xs">XS</option>
+                                <option value="s">S</option>
+                                <option value="m">M</option>
+                                <option value="l">L</option>
+                                <option value="xl">XL</option>
+                                <option value="xxl">XXL</option>
+                            </select>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="message">Additional Details *</label>
+                            <textarea id="message" name="message" rows="5" placeholder="Please provide any additional details about your enquiry, specific requirements, or questions you may have..." required></textarea>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="newsletter">
+                                <input type="checkbox" id="newsletter" name="newsletter">
+                                Subscribe to our newsletter for updates on new arrivals and exclusive offers
+                            </label>
+                        </div>
+
+                        <button type="submit" class="btn btn-primary">Submit Enquiry</button>
+                    </form>
+                </div>
+
+                <div class="enquiry-info">
+                    <h3>Why Choose StyleHub?</h3>
+                    <ul>
+                        <li>✓ Personalized styling advice</li>
+                        <li>✓ High-quality, curated fashion pieces</li>
+                        <li>✓ Competitive pricing</li>
+                        <li>✓ Fast response time (within 24 hours)</li>
+                        <li>✓ Expert fashion consultants</li>
+                        <li>✓ Custom sizing available</li>
+                    </ul>
+
+                    <div class="response-time">
+                        <h4>Response Time</h4>
+                        <p>We typically respond to enquiries within <strong>24 hours</strong> during business days. For urgent requests, please call us directly.</p>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <p>© 2025 StyleHub Boutique. All Rights Reserved.</p>
+    </footer>
+>>>>>>> 020b4d0cc79710f9f031e2cc33f2f3ad0e65b3a4
 </body>
 </html>

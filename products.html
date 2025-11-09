@@ -3,6 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<<<<<<< HEAD
     <title>Fashion Collections | StyleHub Boutique Products</title>
     <meta name="description" content="Browse StyleHub Boutique's complete collection of fashion products. Evening dresses, sneakers, leather bags, accessories and more with detailed product information.">
     <meta name="keywords" content="fashion products, clothing collection, dresses, sneakers, bags, accessories, StyleHub products">
@@ -674,16 +675,31 @@
             }
         }
     </style>
+=======
+    <title>Our Products | StyleHub Boutique</title>
+    
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+    
+    <!-- Font Awesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    
+    <!-- External CSS Stylesheet -->
+    <link rel="stylesheet" href="css/style.css">
+>>>>>>> 020b4d0cc79710f9f031e2cc33f2f3ad0e65b3a4
 </head>
 <body>
-
     <!-- Header & Navigation Section -->
     <header class="header">
         <div class="nav-container">
+<<<<<<< HEAD
             <a href="index.html" class="logo">StyleHub 💎</a>
             <button class="mobile-menu-btn">
                 <i class="fas fa-bars"></i>
             </button>
+=======
+            <a href="index.html" class="logo">StyleHub</a>
+>>>>>>> 020b4d0cc79710f9f031e2cc33f2f3ad0e65b3a4
             <nav>
                 <ul class="nav-links" id="navLinks">
                     <li><a href="index.html">Home</a></li>
@@ -691,6 +707,14 @@
                     <li><a href="products.html" class="active">Products</a></li>
                     <li><a href="enquiry.html">Enquiry</a></li>
                     <li><a href="contact.html">Contact</a></li>
+                    <li><a href="#" onclick="viewWishlist()" class="nav-icon">
+                        <i class="fas fa-heart"></i>
+                        <span class="wishlist-counter">0</span>
+                    </a></li>
+                    <li><a href="#" onclick="viewCart()" class="nav-icon">
+                        <i class="fas fa-shopping-cart"></i>
+                        <span class="cart-counter">0</span>
+                    </a></li>
                 </ul>
             </nav>
         </div>
@@ -698,6 +722,7 @@
 
     <!-- Main Content Section -->
     <main class="container">
+<<<<<<< HEAD
         <div class="products-header">
             <h1>Our Collections 🛍️</h1>
             <div class="search-sort-container">
@@ -767,22 +792,159 @@
 
         <div class="pagination" id="pagination">
             <!-- Pagination will be dynamically generated -->
+=======
+        <h1 class="section-title">Our Collections 🛍️</h1>
+        
+        <!-- Product Grid -->
+        <div class="product-grid" id="product-grid">
+            <div class="product-card" data-product-id="dress-001">
+                <img src="dress.jpeg" alt="Elegant Evening Dress" class="tall-image">
+                <h3>Elegant Evening Dress</h3>
+                <p class="price">R1299.99</p>
+                <select class="size-selector">
+                    <option value="">Select Size</option>
+                    <option value="S">Small (S)</option>
+                    <option value="M">Medium (M)</option>
+                    <option value="L">Large (L)</option>
+                    <option value="XL">Extra Large (XL)</option>
+                </select>
+                <div class="product-actions">
+                    <button class="add-to-wishlist">
+                        <i class="fas fa-heart"></i> Add to Wishlist
+                    </button>
+                    <button class="add-to-cart">
+                        <i class="fas fa-shopping-cart"></i> Add to Cart
+                    </button>
+                </div>
+            </div>
+            
+            <div class="product-card" data-product-id="shoe-001">
+                <img src="shoe.jpeg" alt="Trendy Sneaker">
+                <h3>Trendy Sneaker</h3>
+                <p class="price">R499.99</p>
+                <select class="size-selector">
+                    <option value="">Select Size</option>
+                    <option value="S">Small (S)</option>
+                    <option value="M">Medium (M)</option>
+                    <option value="L">Large (L)</option>
+                    <option value="XL">Extra Large (XL)</option>
+                </select>
+                <div class="product-actions">
+                    <button class="add-to-wishlist">
+                        <i class="fas fa-heart"></i> Add to Wishlist
+                    </button>
+                    <button class="add-to-cart">
+                        <i class="fas fa-shopping-cart"></i> Add to Cart
+                    </button>
+                </div>
+            </div>
+            
+            <div class="product-card" data-product-id="bag-001">
+                <img src="bag.jpeg" alt="Classic Leather Bag">
+                <h3>Classic Leather Bag</h3>
+                <p class="price">R899.99</p>
+                <select class="size-selector">
+                    <option value="">Select Size</option>
+                    <option value="S">Small (S)</option>
+                    <option value="M">Medium (M)</option>
+                    <option value="L">Large (L)</option>
+                    <option value="XL">Extra Large (XL)</option>
+                </select>
+                <div class="product-actions">
+                    <button class="add-to-wishlist">
+                        <i class="fas fa-heart"></i> Add to Wishlist
+                    </button>
+                    <button class="add-to-cart">
+                        <i class="fas fa-shopping-cart"></i> Add to Cart
+                    </button>
+                </div>
+            </div>
+            
+            <div class="product-card" data-product-id="jumpsuit-001">
+                <img src="jumpsuit.jpeg" alt="Urban Explorer Jumpsuit">
+                <h3>Urban Explorer Jumpsuit</h3>
+                <p class="price">R750.00</p>
+                <select class="size-selector">
+                    <option value="">Select Size</option>
+                    <option value="S">Small (S)</option>
+                    <option value="M">Medium (M)</option>
+                    <option value="L">Large (L)</option>
+                    <option value="XL">Extra Large (XL)</option>
+                </select>
+                <div class="product-actions">
+                    <button class="add-to-wishlist">
+                        <i class="fas fa-heart"></i> Add to Wishlist
+                    </button>
+                    <button class="add-to-cart">
+                        <i class="fas fa-shopping-cart"></i> Add to Cart
+                    </button>
+                </div>
+            </div>
+            
+            <div class="product-card" data-product-id="earring-001">
+                <img src="earring.jpeg" alt="Silver Earrings">
+                <h3>Silver Earrings</h3>
+                <p class="price">R350.00</p>
+                <select class="size-selector">
+                    <option value="">Select Size</option>
+                    <option value="S">Small (S)</option>
+                    <option value="M">Medium (M)</option>
+                    <option value="L">Large (L)</option>
+                    <option value="XL">Extra Large (XL)</option>
+                </select>
+                <div class="product-actions">
+                    <button class="add-to-wishlist">
+                        <i class="fas fa-heart"></i> Add to Wishlist
+                    </button>
+                    <button class="add-to-cart">
+                        <i class="fas fa-shopping-cart"></i> Add to Cart
+                    </button>
+                </div>
+            </div>
+            
+            <div class="product-card" data-product-id="jacket-001">
+                <img src="jacket.jpeg" alt="Versatile Denim Jacket">
+                <h3>Versatile Denim Jacket</h3>
+                <p class="price">R350.00</p>
+                <select class="size-selector">
+                    <option value="">Select Size</option>
+                    <option value="S">Small (S)</option>
+                    <option value="M">Medium (M)</option>
+                    <option value="L">Large (L)</option>
+                    <option value="XL">Extra Large (XL)</option>
+                </select>
+                <div class="product-actions">
+                    <button class="add-to-wishlist">
+                        <i class="fas fa-heart"></i> Add to Wishlist
+                    </button>
+                    <button class="add-to-cart">
+                        <i class="fas fa-shopping-cart"></i> Add to Cart
+                    </button>
+                </div>
+            </div>
+>>>>>>> 020b4d0cc79710f9f031e2cc33f2f3ad0e65b3a4
         </div>
 
         <!-- Delivery Details Section -->
         <section class="delivery-section">
-            <h2>Delivery Details 🚚</h2>
-            <p>📦 Delivery Time: 2-5 business days within South Africa.</p>
-            <p>🌍 International Shipping: 7-14 business days.</p>
-            <p>💳 Free delivery for orders over R1000.</p>
+            <h2><i class="fas fa-truck"></i> Delivery Details</h2>
+            <p><strong>Delivery Time:</strong> 2-5 business days within South Africa</p>
+            <p><strong>Shipping Cost:</strong> Free delivery on orders over R500</p>
+            <p><strong>Express Delivery:</strong> Next-day delivery available for R150</p>
+            <p><strong>International Shipping:</strong> 7-14 business days (additional charges apply)</p>
         </section>
 
         <!-- Tracking Section -->
         <section class="tracking-section">
-            <h2>Track Your Order 📦</h2>
-            <input type="text" id="tracking-id" placeholder="Enter Tracking ID">
-            <button onclick="trackOrder()">Track</button>
-            <p id="tracking-result" class="tracking-result"></p>
+            <h2><i class="fas fa-search"></i> Track Your Order</h2>
+            <p>Enter your tracking number to check the status of your order:</p>
+            <div class="tracking-form">
+                <input type="text" id="tracking-input" placeholder="Enter tracking number..." />
+                <button onclick="trackOrder()">
+                    <i class="fas fa-search"></i> Track Order
+                </button>
+            </div>
+            <div class="tracking-result" id="tracking-result"></div>
         </section>
     </main>
 
@@ -807,8 +969,9 @@
         <p>© 2025 StyleHub Boutique. All Rights Reserved.</p>
     </footer>
 
-    <!-- JavaScript -->
+    <!-- JavaScript for tracking functionality -->
     <script>
+<<<<<<< HEAD
         // Mobile Menu Toggle
         const mobileMenuBtn = document.querySelector('.mobile-menu-btn');
         const navLinks = document.getElementById('navLinks');
@@ -1307,7 +1470,24 @@
                 result.textContent = `${randomStatus.text} Tracking ID: ${trackingInput}`;
                 result.style.color = randomStatus.color;
                 result.style.background = randomStatus.bg;
+=======
+        function trackOrder() {
+            const trackingNumber = document.getElementById('tracking-input').value;
+            const resultDiv = document.getElementById('tracking-result');
+            
+            if (trackingNumber.trim() === '') {
+                resultDiv.innerHTML = '<p style="color: #ff4081;">Please enter a tracking number.</p>';
+                return;
+>>>>>>> 020b4d0cc79710f9f031e2cc33f2f3ad0e65b3a4
             }
+            
+            // Simulate tracking result
+            resultDiv.innerHTML = `
+                <p style="color: #28a745;">
+                    <i class="fas fa-check-circle"></i> 
+                    Order ${trackingNumber} is currently in transit and will arrive within 2-3 business days.
+                </p>
+            `;
         }
 
         function showNotification(message) {
@@ -1352,5 +1532,13 @@
             }
         }, 100);
     </script>
+    
+    <!-- Main JavaScript -->
+    <script src="js/script.js"></script>
 </body>
+<<<<<<< HEAD
 </html>
+=======
+</html>
+
+>>>>>>> 020b4d0cc79710f9f031e2cc33f2f3ad0e65b3a4
