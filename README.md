@@ -16,19 +16,18 @@
 Mobile-first layout that adapts to all screen sizes.
 Ensures usability on phones, tablets, and desktops.
 
-#Fast Loading
+## Fast Loading
 Optimized images, compressed CSS/JS, and caching.
 Enhances user experience and SEO.
 
-#SEO-Friendly Structure
+## SEO-Friendly Structure
 Clean URLs, meta tags, and structured content.
 Better visibility in search engines.
 
 **Timeline and Milestone**
-
  Timeline and Milestones 
 
- #Realistic Project Timeline 
+ ## Realistic Project Timeline 
 
 Phase 1: Research and Planning (Weeks 1-2) 
 Week 1: Competitor analysis and product catalogue planning 
@@ -62,29 +61,22 @@ Milestone: Live e-commerce website with full functionality
 **Sitemap**
 # <img width="987" height="598" alt="image" src="https://github.com/user-attachments/assets/3db39216-89ea-42ea-bd9a-76bc1a11d8b6" /> 
 
-**References**
+## References**
+
 #W3Schools. (2025) HTML and CSS tutorials. Available at: https://www.w3schools.com/
-
 #Pinterest. (2025) Fashion website UI inspiration. Available at: https://www.pinterest.com/
-
 #Google Fonts. (2025) Poppins Typeface. Available at: https://fonts.google.com/specimen/Poppins
-
 #Microsoft. (2023) Aptos font family overview. Available at: https://learn.microsoft.com/
-
 #Nielsen Norman Group. (2024) Principles of UX design. Available at: https://www.nngroup.com/
-
 #Krug, S. (2014) Don't Make Me Think: A Common Sense Approach to Web Usability
-
 #Code usage: The HTML and CSS framework was developed using examples and structures from W3Schools (2025).
-
 #Images and style: The product layout and homepage design were inspired by Pinterest boards featuring fashion e-commerce UI trends (Pinterest, 2025).
-
 #Colour palette: The chosen pink (#ff4081) and gold (#FFD700) accents were sourced using Adobe Color to maintain a modern, elegant brand tone (Adobe Color, 2025; Smith, 2023).
-
 #Typography: Poppins was selected for a clean, modern look (Google Fonts, 2025), while Aptos was tested for potential body text due to its versatility (Microsoft, 2023).
-
 #Design principles: The overall navigation and UX layout followed best practices outlined by Nielsen Norman Group (2024) and usability principles by Krug (2014).
+
 **https://github.com/josiane743/My-portfolio.git**
+
 **Wireframe**
 #![fram2](https://github.com/user-attachments/assets/932f70e5-7478-4dae-95e7-6020320c20c0)
 #<img width="1152" height="648" alt="frame1" src="https://github.com/user-attachments/assets/9c5721f0-5d2c-436e-82c9-0e30b91df7d3" />
@@ -313,8 +305,9 @@ h2 {
 # Pinterest. (2025) Fashion website UI inspiration. Available at: https://www.pinterest.com/
 # Google Fonts. (2025) Poppins Typeface. Available at: https://fonts.google.com/specimen/Poppins
 # Typography: Poppins was selected for a clean, modern look (Google Fonts, 2025), while Aptos was tested for potential body text due to its versatility (Microsoft, 2023).
-
-https://github.com/josiane743/My-portfolio.git
+# freeCodeCamp (no date) freeCodeCamp: Learn to code at home. Available at: https://www.freecodecamp.org/
+ (Accessed: 02 November 2025).
+## https://github.com/josiane743/My-portfolio.git
 
 
 
