@@ -1,119 +1,184 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <!-- Enhanced Metadata for SEO -->
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>StyleHub Boutique | High-Quality Fashion</title>
-    <meta name="description" content="Discover contemporary, timeless fashion at StyleHub Boutique. Shop our curated collection of dresses, shoes, and accessories.">
+    <title>StyleHub Boutique | Contemporary Fashion & High-Quality Clothing</title>
+    <meta name="description" content="Discover StyleHub Boutique's curated collection of contemporary fashion. High-quality clothing, accessories, and timeless pieces for the modern wardrobe.">
+    <meta name="keywords" content="fashion boutique, contemporary clothing, quality fashion, StyleHub, women's fashion, accessories">
+    <meta name="author" content="StyleHub Boutique">
     
-<<<<<<< HEAD
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
-
-    <link rel="stylesheet" href="style.css">
-</head>
-<body>
-
-    <header class="header">
-  <div class="container nav-container">
-    <a href="index.html" class="logo">StyleHub 💎</a>
-
-    <nav>
-      <ul class="nav-links">
-        <li><a href="index.html" class="active">Home</a></li>
-        <li><a href="about.html">About Us</a></li>
-        <li><a href="products.html">Products</a></li>
-        <li><a href="enquiry.html">Enquiry</a></li>
-        <li><a href="contact.html">Contact</a></li>
-      </ul>
-    </nav>
-  </div>
-</header>
-
-<section class="hero">
-  <h1>Contemporary Style, Timeless Elegance</h1>
-  <p>Discover curated fashion pieces that empower your confidence — high-quality, affordable, and always on-trend.</p>
-
-  <!-- ✅ This button works because it’s a link -->
-  <a href="products.html" class="cta-button">
-    <i class="fas fa-shopping-bag"></i> Shop New Arrivals
-  </a>
-</section>
-
-<main class="container">
-  <h2>Featured Products</h2>
-
-  <div class="product-grid">
-    <div class="product-card">
-      <img src="dress.jpeg" alt="Elegant Evening Dress">
-      <h3>Elegant Evening Dress</h3>
-      <p class="product-price">R1299.99</p>
-      <button class="add-wishlist"><i class="fas fa-heart"></i> Add to Wishlist</button>
-    </div>
-
-    <div class="product-card">
-      <img src="shoe.jpeg" alt="Trendy Sneaker">
-      <h3>Trendy Sneaker</h3>
-      <p class="product-price">R499.99</p>
-      <button class="add-wishlist"><i class="fas fa-heart"></i> Add to Wishlist</button>
-    </div>
-
-    <div class="product-card">
-      <img src="bag.jpeg" alt="Classic Leather Bag">
-      <h3>Classic Leather Bag</h3>
-      <p class="product-price">R899.99</p>
-      <button class="add-wishlist"><i class="fas fa-heart"></i> Add to Wishlist</button>
-    </div>
-  </div>
-</main>
-
-<!-- ✅ Add this JavaScript at the END of your body -->
-<script>
-  // Run this after the page loads
-  document.addEventListener("DOMContentLoaded", function () {
-    // Make all "Add to Wishlist" buttons work
-    document.querySelectorAll(".add-wishlist").forEach(button => {
-      button.addEventListener("click", () => {
-        button.innerHTML = '<i class="fas fa-heart"></i> Added!';
-        button.style.backgroundColor = '#ff4081';
-        button.style.color = '#fff';
-        alert("💖 Item added to your wishlist!");
-      });
-    });
-  });
-</script>
-
-
-=======
+    <!-- Open Graph Tags -->
+    <meta property="og:title" content="StyleHub Boutique | Contemporary Fashion">
+    <meta property="og:description" content="Discover curated fashion pieces that empower your confidence - high-quality, affordable, and always on-trend.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://stylehubboutique.example">
+    
     <!-- Google Fonts -->
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
-    
+
     <!-- Font Awesome for icons -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
-    
-    <!-- External CSS Stylesheet -->
-    <link rel="stylesheet" href="css/style.css">
+
+    <!-- Styles -->
+    <style>
+        /* Reset & Base Styles */
+        * { margin: 0; padding: 0; box-sizing: border-box; font-family: 'Poppins', sans-serif; }
+        body { background: #fdfdfd; color: #333; line-height: 1.6; overflow-x: hidden; }
+
+        a { text-decoration: none; color: inherit; }
+
+        /* Header */
+        .header { background: #222; color: #fff; padding: 15px 0; box-shadow: 0 2px 6px rgba(0,0,0,0.1); position: sticky; top: 0; z-index: 100; }
+        .nav-container { width: 90%; max-width: 1200px; margin: auto; display: flex; justify-content: space-between; align-items: center; }
+        .logo { font-size: 24px; font-weight: bold; color: #ff4081; }
+        nav ul { list-style: none; display: flex; gap: 25px; }
+        nav a { color: #ddd; font-weight: 500; transition: 0.3s; position: relative; }
+        nav a:hover, nav a.active { color: #ff4081; }
+        nav a::after { content: ''; position: absolute; width: 0; height: 2px; bottom: -5px; left: 0; background: #ff4081; transition: width 0.3s; }
+        nav a:hover::after, nav a.active::after { width: 100%; }
+
+        /* Mobile Menu */
+        .mobile-menu-btn { display: none; background: none; border: none; color: #fff; font-size: 24px; cursor: pointer; }
+
+        /* Hero Section */
+        .hero { 
+            background: linear-gradient(135deg, rgba(255,64,129,0.1) 0%, rgba(255,64,129,0.05) 100%), url('https://via.placeholder.com/1500x600?text=Fashion+Hero') center/cover no-repeat;
+            color: #222; text-align: center; padding: 120px 20px; 
+            position: relative;
+        }
+        .hero h1 { font-size: 48px; font-weight: 700; margin-bottom: 20px; animation: fadeInUp 1s ease; }
+        .hero p { font-size: 18px; margin-bottom: 30px; max-width: 600px; margin-left: auto; margin-right: auto; animation: fadeInUp 1s ease 0.2s both; }
+        .cta-button { background: #ff4081; padding: 15px 25px; border-radius: 30px; color: white; font-weight: bold; font-size: 16px; transition: all 0.3s; display: inline-block; animation: fadeInUp 1s ease 0.4s both; }
+        .cta-button:hover { background: #e73570; transform: translateY(-3px); box-shadow: 0 10px 20px rgba(255,64,129,0.3); }
+
+        /* Animations */
+        @keyframes fadeInUp {
+            from { opacity: 0; transform: translateY(30px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+
+        @keyframes pulse {
+            0% { transform: scale(1); }
+            50% { transform: scale(1.05); }
+            100% { transform: scale(1); }
+        }
+
+        /* Section Title */
+        h2 { text-align: center; font-size: 28px; margin: 50px 0 30px; color: #222; position: relative; }
+        h2::after { content: ''; position: absolute; bottom: -10px; left: 50%; transform: translateX(-50%); width: 60px; height: 3px; background: #ff4081; }
+
+        /* Product Grid */
+        .product-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 20px; width: 90%; max-width: 1200px; margin: auto; }
+        .product-card { background: #fff; padding: 20px; border-radius: 12px; box-shadow: 0 2px 8px rgba(0,0,0,0.1); text-align: center; transition: all 0.3s; position: relative; overflow: hidden; }
+        .product-card:hover { transform: translateY(-5px); box-shadow: 0 10px 25px rgba(0,0,0,0.15); }
+        .product-card img { width: 100%; border-radius: 12px; margin-bottom: 15px; transition: transform 0.3s; }
+        .product-card:hover img { transform: scale(1.05); }
+        .product-card h3 { font-size: 18px; margin-bottom: 10px; }
+        .product-price { color: #ff4081; font-weight: bold; margin-bottom: 10px; font-size: 1.2em; }
+        .product-card button { background: #222; color: #fff; border: none; padding: 10px 15px; border-radius: 25px; cursor: pointer; font-size: 14px; transition: all 0.3s; }
+        .product-card button:hover { background: #ff4081; transform: translateY(-2px); }
+        .product-badge { position: absolute; top: 15px; right: 15px; background: #ff4081; color: white; padding: 5px 10px; border-radius: 15px; font-size: 12px; font-weight: bold; }
+
+        /* Newsletter Section */
+        .newsletter { background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); color: white; padding: 60px 20px; text-align: center; margin: 50px 0; }
+        .newsletter h2 { color: white; margin-bottom: 20px; }
+        .newsletter p { max-width: 600px; margin: 0 auto 30px; }
+        .newsletter-form { display: flex; max-width: 400px; margin: 0 auto; }
+        .newsletter-form input { flex: 1; padding: 12px 15px; border: none; border-radius: 25px 0 0 25px; font-size: 16px; }
+        .newsletter-form button { background: #ff4081; color: white; border: none; padding: 12px 25px; border-radius: 0 25px 25px 0; cursor: pointer; font-weight: bold; transition: background 0.3s; }
+        .newsletter-form button:hover { background: #e73570; }
+
+        /* Testimonials Carousel */
+        .testimonials { background: #f9f9f9; padding: 60px 20px; margin: 50px 0; }
+        .testimonial-carousel { max-width: 800px; margin: 0 auto; position: relative; }
+        .testimonial-slide { text-align: center; padding: 30px; display: none; animation: fadeIn 0.5s ease; }
+        .testimonial-slide.active { display: block; }
+        .testimonial-text { font-style: italic; font-size: 18px; margin-bottom: 20px; }
+        .testimonial-author { font-weight: bold; color: #ff4081; }
+        .carousel-nav { display: flex; justify-content: center; margin-top: 20px; gap: 10px; }
+        .carousel-dot { width: 12px; height: 12px; border-radius: 50%; background: #ddd; cursor: pointer; transition: background 0.3s; }
+        .carousel-dot.active { background: #ff4081; }
+
+        @keyframes fadeIn {
+            from { opacity: 0; }
+            to { opacity: 1; }
+        }
+
+        /* Features Grid */
+        .features-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 30px; max-width: 1200px; margin: 50px auto; padding: 0 20px; }
+        .feature-card { text-align: center; padding: 30px 20px; background: white; border-radius: 10px; box-shadow: 0 5px 15px rgba(0,0,0,0.1); transition: transform 0.3s; }
+        .feature-card:hover { transform: translateY(-5px); }
+        .feature-icon { font-size: 40px; color: #ff4081; margin-bottom: 15px; }
+        .feature-card h3 { margin-bottom: 10px; }
+
+        /* Footer */
+        .footer { background: #222; color: #ccc; text-align: center; padding: 40px 20px; margin-top: 50px; }
+        .footer-content { display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 30px; max-width: 1200px; margin: 0 auto 30px; text-align: left; }
+        .footer-section h3 { color: #ff4081; margin-bottom: 15px; }
+        .footer-section a { color: #ccc; transition: color 0.3s; display: block; margin-bottom: 8px; }
+        .footer-section a:hover { color: #ff4081; }
+        .social-links { display: flex; gap: 15px; justify-content: center; margin-top: 20px; }
+        .social-links a { color: #ccc; font-size: 20px; transition: color 0.3s, transform 0.3s; }
+        .social-links a:hover { color: #ff4081; transform: translateY(-3px); }
+
+        /* Back to Top Button */
+        .back-to-top { position: fixed; bottom: 30px; right: 30px; background: #ff4081; color: white; width: 50px; height: 50px; border-radius: 50%; display: flex; align-items: center; justify-content: center; cursor: pointer; opacity: 0; visibility: hidden; transition: all 0.3s; z-index: 99; }
+        .back-to-top.visible { opacity: 1; visibility: visible; }
+        .back-to-top:hover { background: #e73570; transform: translateY(-3px); }
+
+        /* Modal for Quick View */
+        .modal { display: none; position: fixed; top: 0; left: 0; width: 100%; height: 100%; background: rgba(0,0,0,0.8); z-index: 1000; justify-content: center; align-items: center; }
+        .modal-content { background: white; padding: 30px; border-radius: 10px; max-width: 500px; width: 90%; position: relative; animation: modalFadeIn 0.3s; }
+        .close-modal { position: absolute; top: 15px; right: 15px; font-size: 24px; cursor: pointer; color: #666; }
+        .close-modal:hover { color: #ff4081; }
+
+        @keyframes modalFadeIn {
+            from { opacity: 0; transform: scale(0.8); }
+            to { opacity: 1; transform: scale(1); }
+        }
+
+        /* Responsive */
+        @media (max-width: 768px) {
+            .hero h1 { font-size: 32px; }
+            .hero p { font-size: 16px; }
+            .mobile-menu-btn { display: block; }
+            nav ul { 
+                position: fixed; 
+                top: 70px; 
+                left: -100%; 
+                width: 100%; 
+                height: calc(100vh - 70px); 
+                background: #222; 
+                flex-direction: column; 
+                align-items: center; 
+                justify-content: flex-start; 
+                padding-top: 50px;
+                transition: left 0.3s;
+            }
+            nav ul.active { left: 0; }
+            .newsletter-form { flex-direction: column; }
+            .newsletter-form input, .newsletter-form button { border-radius: 25px; margin-bottom: 10px; }
+        }
+    </style>
 </head>
 <body>
+
     <!-- Header & Navigation Section -->
     <header class="header">
-        <div class="nav-container">
-            <a href="index.html" class="logo">StyleHub</a>
+        <div class="container nav-container">
+            <a href="index.html" class="logo">StyleHub 💎</a>
+            <button class="mobile-menu-btn">
+                <i class="fas fa-bars"></i>
+            </button>
             <nav>
-                <ul class="nav-links">
+                <ul class="nav-links" id="navLinks">
                     <li><a href="index.html" class="active">Home</a></li>
                     <li><a href="about.html">About Us</a></li>
                     <li><a href="products.html">Products</a></li>
                     <li><a href="enquiry.html">Enquiry</a></li>
                     <li><a href="contact.html">Contact</a></li>
-                    <li><a href="#" onclick="viewWishlist()" class="nav-icon">
-                        <i class="fas fa-heart"></i>
-                        <span class="wishlist-counter">0</span>
-                    </a></li>
-                    <li><a href="#" onclick="viewCart()" class="nav-icon">
-                        <i class="fas fa-shopping-cart"></i>
-                        <span class="cart-counter">0</span>
-                    </a></li>
                 </ul>
             </nav>
         </div>
@@ -123,68 +188,325 @@
     <section class="hero">
         <h1>Contemporary Style, Timeless Elegance</h1>
         <p>Discover curated fashion pieces that empower your confidence — high-quality, affordable, and always on-trend.</p>
-        <a href="products.html" class="cta-button">
-            <i class="fas fa-shopping-bag"></i> Shop New Arrivals
-        </a>
+        <a href="products.html" class="cta-button"><i class="fas fa-shopping-bag"></i> Shop New Arrivals</a>
+    </section>
+
+    <!-- Features Section -->
+    <section class="features">
+        <div class="features-grid">
+            <div class="feature-card">
+                <div class="feature-icon">
+                    <i class="fas fa-shipping-fast"></i>
+                </div>
+                <h3>Free Shipping</h3>
+                <p>Free delivery on orders over R1000</p>
+            </div>
+            <div class="feature-card">
+                <div class="feature-icon">
+                    <i class="fas fa-undo-alt"></i>
+                </div>
+                <h3>Easy Returns</h3>
+                <p>30-day return policy</p>
+            </div>
+            <div class="feature-card">
+                <div class="feature-icon">
+                    <i class="fas fa-lock"></i>
+                </div>
+                <h3>Secure Payment</h3>
+                <p>100% secure transactions</p>
+            </div>
+            <div class="feature-card">
+                <div class="feature-icon">
+                    <i class="fas fa-headset"></i>
+                </div>
+                <h3>24/7 Support</h3>
+                <p>Dedicated customer service</p>
+            </div>
+        </div>
     </section>
 
     <!-- Featured Products Section -->
-    <main class="container">
-        <h2 class="section-title">Featured Products</h2>
+    <main>
+        <h2>Featured Products</h2>
         <div class="product-grid">
-            <div class="product-card" data-product-id="dress-001">
-                <img src="dress.jpeg" alt="Elegant Evening Dress">
+            <div class="product-card">
+                <span class="product-badge">New</span>
+                <img src="dress.jpg" alt="Elegant Evening Dress - Black cocktail dress for special occasions" loading="lazy">
                 <h3>Elegant Evening Dress</h3>
-                <p class="price">R1299.99</p>
-                <div class="product-actions">
-                    <button class="add-to-cart">
-                        <i class="fas fa-shopping-cart"></i> Add to Cart
-                    </button>
-                    <button class="add-to-wishlist">
-                        <i class="fas fa-heart"></i> Add to Wishlist
-                    </button>
-                </div>
+                <p class="product-price">R1299.99</p>
+                <button onclick="addToWishlist('Elegant Evening Dress')"><i class="fas fa-heart"></i> Add to Wishlist</button>
+                <button onclick="quickView('Elegant Evening Dress', 1299.99, 'dress.jpg', 'Beautiful black evening dress perfect for special occasions')"><i class="fas fa-eye"></i> Quick View</button>
             </div>
-            <div class="product-card" data-product-id="shoe-001">
-                <img src="shoe.jpeg" alt="Trendy Sneaker">
+            <div class="product-card">
+                <span class="product-badge">Bestseller</span>
+                <img src="shoe.jpg" alt="Trendy Sneaker - White fashion sneakers for everyday wear" loading="lazy">
                 <h3>Trendy Sneaker</h3>
-                <p class="price">R499.99</p>
-                <div class="product-actions">
-                    <button class="add-to-cart">
-                        <i class="fas fa-shopping-cart"></i> Add to Cart
-                    </button>
-                    <button class="add-to-wishlist">
-                        <i class="fas fa-heart"></i> Add to Wishlist
-                    </button>
-                </div>
+                <p class="product-price">R499.99</p>
+                <button onclick="addToWishlist('Trendy Sneaker')"><i class="fas fa-heart"></i> Add to Wishlist</button>
+                <button onclick="quickView('Trendy Sneaker', 499.99, 'shoe.jpg', 'Comfortable and stylish white sneakers')"><i class="fas fa-eye"></i> Quick View</button>
             </div>
-            <div class="product-card" data-product-id="bag-001">
-                <img src="bag.jpeg" alt="Classic Leather Bag">
+            <div class="product-card">
+                <img src="bag.jpg" alt="Classic Leather Bag - Brown leather handbag for women" loading="lazy">
                 <h3>Classic Leather Bag</h3>
-                <p class="price">R899.99</p>
-                <div class="product-actions">
-                    <button class="add-to-cart">
-                        <i class="fas fa-shopping-cart"></i> Add to Cart
-                    </button>
-                    <button class="add-to-wishlist">
-                        <i class="fas fa-heart"></i> Add to Wishlist
-                    </button>
-                </div>
+                <p class="product-price">R899.99</p>
+                <button onclick="addToWishlist('Classic Leather Bag')"><i class="fas fa-heart"></i> Add to Wishlist</button>
+                <button onclick="quickView('Classic Leather Bag', 899.99, 'bag.jpg', 'Premium quality leather handbag')"><i class="fas fa-eye"></i> Quick View</button>
             </div>
         </div>
     </main>
 
+    <!-- Testimonials Section -->
+    <section class="testimonials">
+        <h2>What Our Customers Say</h2>
+        <div class="testimonial-carousel">
+            <div class="testimonial-slide active">
+                <p class="testimonial-text">"The quality of clothing from StyleHub is exceptional. I always get compliments when I wear their pieces!"</p>
+                <p class="testimonial-author">- Sarah M.</p>
+            </div>
+            <div class="testimonial-slide">
+                <p class="testimonial-text">"Fast shipping and great customer service. My new favorite boutique!"</p>
+                <p class="testimonial-author">- Jessica T.</p>
+            </div>
+            <div class="testimonial-slide">
+                <p class="testimonial-text">"The evening dress I bought was perfect for my sister's wedding. Absolutely stunning!"</p>
+                <p class="testimonial-author">- Amanda K.</p>
+            </div>
+            <div class="carousel-nav">
+                <div class="carousel-dot active" onclick="currentSlide(0)"></div>
+                <div class="carousel-dot" onclick="currentSlide(1)"></div>
+                <div class="carousel-dot" onclick="currentSlide(2)"></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Newsletter Section -->
+    <section class="newsletter">
+        <h2>Stay in Style</h2>
+        <p>Subscribe to our newsletter for exclusive offers, new arrivals, and style tips.</p>
+        <form class="newsletter-form" onsubmit="subscribeNewsletter(event)">
+            <input type="email" placeholder="Your email address" required>
+            <button type="submit">Subscribe</button>
+        </form>
+    </section>
+
     <!-- Footer -->
->>>>>>> 020b4d0cc79710f9f031e2cc33f2f3ad0e65b3a4
     <footer class="footer">
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3>Shop</h3>
+                <a href="products.html">All Products</a>
+                <a href="products.html">New Arrivals</a>
+                <a href="products.html">Bestsellers</a>
+                <a href="products.html">Sale</a>
+            </div>
+            <div class="footer-section">
+                <h3>Help</h3>
+                <a href="contact.html">Contact Us</a>
+                <a href="enquiry.html">FAQ</a>
+                <a href="#">Shipping Info</a>
+                <a href="#">Returns & Exchanges</a>
+            </div>
+            <div class="footer-section">
+                <h3>About</h3>
+                <a href="about.html">Our Story</a>
+                <a href="about.html">Careers</a>
+                <a href="#">Sustainability</a>
+                <a href="#">Press</a>
+            </div>
+        </div>
+        
+        <div class="social-links">
+            <a href="#" aria-label="Facebook"><i class="fab fa-facebook"></i></a>
+            <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+            <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+            <a href="#" aria-label="Pinterest"><i class="fab fa-pinterest"></i></a>
+        </div>
+        
         <p>© 2025 <a href="index.html">StyleHub Boutique</a>. All Rights Reserved.</p>
     </footer>
 
-<<<<<<< HEAD
-    <script src="main.js" defer></script>
-=======
-    <!-- JavaScript -->
-    <script src="js/script.js"></script>
->>>>>>> 020b4d0cc79710f9f031e2cc33f2f3ad0e65b3a4
+    <!-- Back to Top Button -->
+    <div class="back-to-top" onclick="scrollToTop()">
+        <i class="fas fa-chevron-up"></i>
+    </div>
+
+    <!-- Quick View Modal -->
+    <div class="modal" id="quickViewModal">
+        <div class="modal-content">
+            <span class="close-modal" onclick="closeModal()">&times;</span>
+            <h2 id="modalProductName"></h2>
+            <img id="modalProductImage" src="" alt="" style="width: 100%; border-radius: 8px; margin: 15px 0;">
+            <p id="modalProductDescription"></p>
+            <p class="product-price" id="modalProductPrice"></p>
+            <button onclick="addToCartFromModal()" style="background: #ff4081; color: white; border: none; padding: 12px 25px; border-radius: 25px; cursor: pointer; margin-right: 10px;">
+                <i class="fas fa-shopping-cart"></i> Add to Cart
+            </button>
+            <button onclick="addToWishlistFromModal()" style="background: #222; color: white; border: none; padding: 12px 25px; border-radius: 25px; cursor: pointer;">
+                <i class="fas fa-heart"></i> Add to Wishlist
+            </button>
+        </div>
+    </div>
+
+    <script>
+        // Mobile Menu Toggle
+        const mobileMenuBtn = document.querySelector('.mobile-menu-btn');
+        const navLinks = document.getElementById('navLinks');
+
+        mobileMenuBtn.addEventListener('click', () => {
+            navLinks.classList.toggle('active');
+        });
+
+        // Back to Top Button
+        const backToTop = document.querySelector('.back-to-top');
+
+        window.addEventListener('scroll', () => {
+            if (window.pageYOffset > 300) {
+                backToTop.classList.add('visible');
+            } else {
+                backToTop.classList.remove('visible');
+            }
+        });
+
+        function scrollToTop() {
+            window.scrollTo({ top: 0, behavior: 'smooth' });
+        }
+
+        // Testimonial Carousel
+        let currentTestimonial = 0;
+        const testimonials = document.querySelectorAll('.testimonial-slide');
+        const dots = document.querySelectorAll('.carousel-dot');
+
+        function showTestimonial(n) {
+            testimonials.forEach(testimonial => testimonial.classList.remove('active'));
+            dots.forEach(dot => dot.classList.remove('active'));
+            
+            currentTestimonial = n;
+            testimonials[currentTestimonial].classList.add('active');
+            dots[currentTestimonial].classList.add('active');
+        }
+
+        function currentSlide(n) {
+            showTestimonial(n);
+        }
+
+        // Auto-rotate testimonials
+        setInterval(() => {
+            currentTestimonial = (currentTestimonial + 1) % testimonials.length;
+            showTestimonial(currentTestimonial);
+        }, 5000);
+
+        // Quick View Modal
+        function quickView(name, price, image, description) {
+            document.getElementById('modalProductName').textContent = name;
+            document.getElementById('modalProductPrice').textContent = `R${price.toFixed(2)}`;
+            document.getElementById('modalProductImage').src = image;
+            document.getElementById('modalProductImage').alt = name;
+            document.getElementById('modalProductDescription').textContent = description;
+            document.getElementById('quickViewModal').style.display = 'flex';
+        }
+
+        function closeModal() {
+            document.getElementById('quickViewModal').style.display = 'none';
+        }
+
+        // Close modal when clicking outside
+        window.addEventListener('click', (e) => {
+            const modal = document.getElementById('quickViewModal');
+            if (e.target === modal) {
+                closeModal();
+            }
+        });
+
+        // Wishlist functionality
+        function addToWishlist(productName) {
+            let wishlist = JSON.parse(localStorage.getItem('wishlist')) || [];
+            if (!wishlist.includes(productName)) {
+                wishlist.push(productName);
+                localStorage.setItem('wishlist', JSON.stringify(wishlist));
+                showNotification(`Added ${productName} to wishlist! ❤️`);
+            } else {
+                showNotification(`${productName} is already in your wishlist!`);
+            }
+        }
+
+        function addToWishlistFromModal() {
+            const productName = document.getElementById('modalProductName').textContent;
+            addToWishlist(productName);
+            closeModal();
+        }
+
+        function addToCartFromModal() {
+            const productName = document.getElementById('modalProductName').textContent;
+            showNotification(`Added ${productName} to cart! 🛒`);
+            closeModal();
+        }
+
+        // Newsletter Subscription
+        function subscribeNewsletter(event) {
+            event.preventDefault();
+            const email = event.target.querySelector('input[type="email"]').value;
+            // In a real application, you would send this to your backend
+            showNotification(`Thank you for subscribing with ${email}! You'll hear from us soon.`);
+            event.target.reset();
+        }
+
+        // Notification System
+        function showNotification(message) {
+            // Create notification element
+            const notification = document.createElement('div');
+            notification.textContent = message;
+            notification.style.cssText = `
+                position: fixed;
+                top: 20px;
+                right: 20px;
+                background: #4CAF50;
+                color: white;
+                padding: 15px 25px;
+                border-radius: 5px;
+                z-index: 1000;
+                box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+                transform: translateX(100%);
+                transition: transform 0.3s ease;
+            `;
+            
+            document.body.appendChild(notification);
+            
+            // Animate in
+            setTimeout(() => {
+                notification.style.transform = 'translateX(0)';
+            }, 100);
+            
+            // Animate out and remove
+            setTimeout(() => {
+                notification.style.transform = 'translateX(100%)';
+                setTimeout(() => {
+                    document.body.removeChild(notification);
+                }, 300);
+            }, 3000);
+        }
+
+        // Scroll animations
+        const observerOptions = {
+            threshold: 0.1,
+            rootMargin: '0px 0px -50px 0px'
+        };
+
+        const observer = new IntersectionObserver(function(entries) {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.style.opacity = '1';
+                    entry.target.style.transform = 'translateY(0)';
+                }
+            });
+        }, observerOptions);
+
+        // Observe elements for animation
+        document.querySelectorAll('.product-card, .feature-card').forEach(el => {
+            el.style.opacity = '0';
+            el.style.transform = 'translateY(30px)';
+            el.style.transition = 'opacity 0.5s ease, transform 0.5s ease';
+            observer.observe(el);
+        });
+    </script>
 </body>
 </html>

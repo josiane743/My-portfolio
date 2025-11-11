@@ -1,270 +1,152 @@
+<!-- contact.html - Enhanced Version -->
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<<<<<<< HEAD
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width,initial-scale=1" />
-  <title>Contact Us | StyleHub Boutique</title>
-  <meta name="description" content="Contact StyleHub Boutique for general enquiries, order support, and partnership opportunities. Visit us in Cape Town or send us a message.">
-
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <title>Contact Us | StyleHub Boutique - Fashion Enquiries & Support</title>
+  <meta name="description" content="Get in touch with StyleHub Boutique for fashion enquiries, order support, partnership opportunities, and customer service. We're here to help!" />
+  <meta name="keywords" content="fashion contact, StyleHub support, clothing enquiry, boutique customer service" />
 
   <link rel="stylesheet" href="style.css" />
+  <style>
+    .feedback { margin-top: 12px; font-weight: 600; padding: 10px; border-radius: 5px; }
+    .feedback.success { color: #0a7; background: #f0fff0; border: 1px solid #0a7; }
+    .feedback.error { color: #d00; background: #fff0f0; border: 1px solid #d00; }
+    .field-error { border-color: #d00 !important; box-shadow: 0 0 4px rgba(208,0,0,0.15); }
+    .sr-only { position: absolute; left: -10000px; width: 1px; height: 1px; overflow: hidden; }
+    .loading { display: none; text-align: center; margin: 10px 0; }
+    .spinner { border: 4px solid #f3f3f3; border-top: 4px solid #ff4081; border-radius: 50%; width: 30px; height: 30px; animation: spin 2s linear infinite; margin: 0 auto; }
+    @keyframes spin { 0% { transform: rotate(0deg); } 100% { transform: rotate(360deg); } }
+    
+    /* Modal Styles */
+    .modal { display: none; position: fixed; z-index: 1000; left: 0; top: 0; width: 100%; height: 100%; background-color: rgba(0,0,0,0.5); }
+    .modal-content { background-color: #fff; margin: 15% auto; padding: 20px; border-radius: 8px; width: 80%; max-width: 500px; text-align: center; }
+    .close-modal { color: #aaa; float: right; font-size: 28px; font-weight: bold; cursor: pointer; }
+    .close-modal:hover { color: #000; }
+  </style>
 </head>
 <body>
-<header class="header">
-        <div class="container nav-container">
-            <a href="index.html" class="logo">StyleHub 💎</a>
-=======
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Contact Us | StyleHub Boutique</title>
-    <link rel="stylesheet" href="css/style.css">
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
-</head>
-<body>
-    <header>
-        <div class="container">
-            <div class="logo">
-                <h1>StyleHub</h1>
-            </div>
->>>>>>> 020b4d0cc79710f9f031e2cc33f2f3ad0e65b3a4
-            <nav>
-                <ul>
-                    <li><a href="index.html">Home</a></li>
-                    <li><a href="about.html">About Us</a></li>
-                    <li><a href="products.html">Product</a></li>
-                    <li><a href="enquiry.html">Enquiry</a></li>
-<<<<<<< HEAD
-                    <li><a href="contact.html"class="active">Conta</a></li>
-=======
-                    <li><a href="contact.html" class="active">Contact</a></li>
->>>>>>> 020b4d0cc79710f9f031e2cc33f2f3ad0e65b3a4
-                </ul>
-            </nav>
-        </div>
-    </header>
+ <header class="header">
+ <div class="container nav-container">
+      <a href="index.html" class="logo">StyleHub 💎</a>
 
-<<<<<<< HEAD
+    <nav aria-label="Main Navigation">
+      <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About Us</a></li>
+        <li><a href="products.html">Products</a></li>
+        <li><a href="enquiry.html">Enquiry</a></li>
+        <li><a href="contact.html" class="active">Contact</a></li>
+      </ul>
+    </nav>
+  </div>
+</header>
+
   <main class="container">
-    <section class="contact-section" aria-labelledby="contact-heading">
-      <h1 id="contact-heading">Get in Touch</h1>
-      <p>Use the form below for general enquiries, order support, or partnership messages.</p>
+    <h1 id="contact-heading">Get in Touch</h1>
+    <p>Use the form below for general enquiries, order support, or partnership messages. We typically respond within 24 hours.</p>
 
-      <form id="contact-form" action="#" method="post" novalidate>
-        <div class="form-group">
-          <label for="name">Full name <span class="required">*</span></label>
-          <input id="name" name="name" type="text" required minlength="2" placeholder="Your full name" />
-          <div class="sr-only" id="name-err" aria-live="polite"></div>
-=======
-    <main>
-        <div class="container">
-            <section class="hero">
-                <h1>Contact Us</h1>
-                <p>Get in touch with StyleHub Boutique. We'd love to hear from you and help you find your perfect style.</p>
-            </section>
+    <form id="contact-form" action="#" method="post" novalidate>
+      <div class="form-group">
+        <label for="name">Full name <span class="required">*</span></label>
+        <input id="name" name="name" type="text" required minlength="2" placeholder="Your full name" />
+        <div class="error-message" id="name-error"></div>
+      </div>
 
-            <section class="contact-content">
-                <div class="contact-info">
-                    <h2>Get in Touch</h2>
-                    
-                    <div class="contact-item">
-                        <h3>📍 Visit Our Store</h3>
-                        <p>123 Fashion Street<br>
-                        Style District, SD 12345<br>
-                        Downtown Fashion Quarter</p>
-                    </div>
+      <div class="form-group">
+        <label for="email">Email <span class="required">*</span></label>
+        <input id="email" name="email" type="email" required placeholder="you@example.com" />
+        <div class="error-message" id="email-error"></div>
+      </div>
 
-                    <div class="contact-item">
-                        <h3>📞 Call Us</h3>
-                        <p>Phone: <a href="tel:+1234567890">(123) 456-7890</a><br>
-                        Toll-Free: <a href="tel:+1800123456">(800) 123-4567</a></p>
-                    </div>
+      <div class="form-group">
+        <label for="phone">Phone Number</label>
+        <input id="phone" name="phone" type="tel" placeholder="+27 12 345 6789" pattern="^(\+27|0)[0-9]{9}$" />
+        <div class="error-message" id="phone-error"></div>
+      </div>
 
-                    <div class="contact-item">
-                        <h3>✉️ Email Us</h3>
-                        <p>General: <a href="mailto:info@stylehub.com">info@stylehub.com</a><br>
-                        Support: <a href="mailto:support@stylehub.com">support@stylehub.com</a><br>
-                        Sales: <a href="mailto:sales@stylehub.com">sales@stylehub.com</a></p>
-                    </div>
+      <div class="form-group">
+        <label for="type">Message type <span class="required">*</span></label>
+        <select id="type" name="type" required>
+          <option value="">Select one</option>
+          <option value="general">General Enquiry</option>
+          <option value="order">Order Query</option>
+          <option value="partnership">Partnership</option>
+          <option value="complaint">Complaint</option>
+          <option value="feedback">Feedback</option>
+        </select>
+        <div class="error-message" id="type-error"></div>
+      </div>
 
-                    <div class="contact-item">
-                        <h3>🕒 Business Hours</h3>
-                        <p>Monday - Friday: 9:00 AM - 8:00 PM<br>
-                        Saturday: 10:00 AM - 6:00 PM<br>
-                        Sunday: 12:00 PM - 5:00 PM</p>
-                    </div>
+      <div class="form-group">
+        <label for="priority">Priority</label>
+        <select id="priority" name="priority">
+          <option value="low">Low</option>
+          <option value="normal" selected>Normal</option>
+          <option value="high">High</option>
+          <option value="urgent">Urgent</option>
+        </select>
+      </div>
 
-                    <div class="contact-item">
-                        <h3>🌐 Follow Us</h3>
-                        <div class="social-links">
-                            <a href="#" aria-label="Facebook">📘 Facebook</a>
-                            <a href="#" aria-label="Instagram">📷 Instagram</a>
-                            <a href="#" aria-label="TikTok">🎵 TikTok</a>
-                            <a href="#" aria-label="Twitter">🐦 Twitter</a>
-                        </div>
-                    </div>
-                </div>
+      <div class="form-group">
+        <label for="message">Message <span class="required">*</span></label>
+        <textarea id="message" name="message" rows="6" required minlength="10" maxlength="1000" placeholder="Tell us about your enquiry... (10-1000 characters)"></textarea>
+        <div class="char-count"><span id="char-counter">0</span>/1000 characters</div>
+        <div class="error-message" id="message-error"></div>
+      </div>
 
-                <div class="contact-form">
-                    <h2>Send Us a Message</h2>
-                    <form>
-                        <div class="form-group">
-                            <label for="contact-name">Full Name *</label>
-                            <input type="text" id="contact-name" name="name" required>
-                        </div>
+      <div class="form-group">
+        <label>
+          <input type="checkbox" id="newsletter" name="newsletter" checked />
+          Subscribe to our newsletter for updates and promotions
+        </label>
+      </div>
 
-                        <div class="form-group">
-                            <label for="contact-email">Email Address *</label>
-                            <input type="email" id="contact-email" name="email" required>
-                        </div>
+      <div class="form-actions">
+        <button type="submit" class="submit-button" id="submit-btn">Send Message</button>
+        <button type="reset" class="btn btn-secondary">Clear Form</button>
+      </div>
 
-                        <div class="form-group">
-                            <label for="contact-phone">Phone Number</label>
-                            <input type="tel" id="contact-phone" name="phone">
-                        </div>
+      <div class="loading" id="loading-indicator">
+        <div class="spinner"></div>
+        <p>Sending your message...</p>
+      </div>
 
-                        <div class="form-group">
-                            <label for="subject">Subject *</label>
-                            <select id="subject" name="subject" required>
-                                <option value="">Select a subject</option>
-                                <option value="general">General Inquiry</option>
-                                <option value="product">Product Question</option>
-                                <option value="order">Order Status</option>
-                                <option value="return">Returns & Exchanges</option>
-                                <option value="complaint">Complaint</option>
-                                <option value="compliment">Compliment</option>
-                                <option value="partnership">Partnership Opportunity</option>
-                                <option value="other">Other</option>
-                            </select>
-                        </div>
+      <div id="form-feedback" class="feedback" aria-live="polite"></div>
+    </form>
 
-                        <div class="form-group">
-                            <label for="priority">Priority</label>
-                            <select id="priority" name="priority">
-                                <option value="normal">Normal</option>
-                                <option value="high">High</option>
-                                <option value="urgent">Urgent</option>
-                            </select>
-                        </div>
+    <!-- Success Modal -->
+    <div id="success-modal" class="modal">
+      <div class="modal-content">
+        <span class="close-modal">&times;</span>
+        <h2>Message Sent Successfully!</h2>
+        <p>Thank you for contacting StyleHub Boutique. We've received your message and will get back to you within 24 hours.</p>
+        <button id="modal-close-btn" class="submit-button">OK</button>
+      </div>
+    </div>
 
-                        <div class="form-group">
-                            <label for="contact-message">Message *</label>
-                            <textarea id="contact-message" name="message" rows="6" placeholder="Please provide details about your inquiry..." required></textarea>
-                        </div>
-
-                        <div class="form-group">
-                            <label for="contact-newsletter">
-                                <input type="checkbox" id="contact-newsletter" name="newsletter">
-                                I would like to receive updates and promotional emails
-                            </label>
-                        </div>
-
-                        <button type="submit" class="btn btn-primary">Send Message</button>
-                    </form>
-                </div>
-            </section>
-
-            <section class="map-section">
-                <h2>Find Us</h2>
-                <div class="map-placeholder">
-                    <p>🗺️ Interactive Map</p>
-                    <p>123 Fashion Street, Style District, SD 12345</p>
-                    <p>Located in the heart of Downtown Fashion Quarter</p>
-                    <div class="map-directions">
-                        <h4>Directions:</h4>
-                        <ul>
-                            <li>🚗 Free parking available behind the building</li>
-                            <li>🚌 Bus routes 15, 23, and 45 stop nearby</li>
-                            <li>🚇 Metro: Fashion District Station (2 blocks away)</li>
-                            <li>🚶‍♀️ Wheelchair accessible entrance on Fashion Street</li>
-                        </ul>
-                    </div>
-                </div>
-            </section>
-
-            <section class="faq-section">
-                <h2>Frequently Asked Questions</h2>
-                <div class="faq-grid">
-                    <div class="faq-item">
-                        <h4>What are your return policies?</h4>
-                        <p>We offer a 30-day return policy for unworn items with original tags. Returns are free for online purchases.</p>
-                    </div>
-                    <div class="faq-item">
-                        <h4>Do you offer personal styling services?</h4>
-                        <p>Yes! Our expert stylists are available for personal consultations. Book an appointment through our enquiry form.</p>
-                    </div>
-                    <div class="faq-item">
-                        <h4>What payment methods do you accept?</h4>
-                        <p>We accept all major credit cards, PayPal, Apple Pay, and Google Pay both online and in-store.</p>
-                    </div>
-                    <div class="faq-item">
-                        <h4>Do you ship internationally?</h4>
-                        <p>Currently, we ship within the continental US. International shipping is coming soon!</p>
-                    </div>
-                </div>
-            </section>
->>>>>>> 020b4d0cc79710f9f031e2cc33f2f3ad0e65b3a4
-        </div>
-
-<<<<<<< HEAD
-        <div class="form-group">
-          <label for="email">Email <span class="required">*</span></label>
-          <input id="email" name="email" type="email" required placeholder="you@example.com" />
-          <div class="sr-only" id="email-err" aria-live="polite"></div>
-        </div>
-
-        <div class="form-group">
-          <label for="type">Message type <span class="required">*</span></label>
-          <select id="type" name="type" required>
-            <option value="">Select one</option>
-            <option value="general">General Enquiry</option>
-            <option value="order">Order Query</option>
-            <option value="partnership">Partnership</option>
-          </select>
-          <div class="sr-only" id="type-err" aria-live="polite"></div>
-        </div>
-
-        <div class="form-group">
-          <label for="message">Message <span class="required">*</span></label>
-          <textarea id="message" name="message" rows="6" required minlength="10" placeholder="Tell us about your enquiry..."></textarea>
-          <div class="sr-only" id="message-err" aria-live="polite"></div>
-        </div>
-
-        <div class="form-actions">
-          <button type="submit" class="submit-button"><i class="fas fa-paper-plane"></i> Send Message</button>
-          <button type="reset" class="btn btn-secondary"><i class="fas fa-redo"></i> Clear</button>
-        </div>
-
-        <div id="form-feedback" class="feedback" aria-live="polite"></div>
-      </form>
-    </section>
-
-    <section class="contact-details" aria-labelledby="contact-details-heading">
-      <h2 id="contact-details-heading">Visit or call us</h2>
-      <div class="contact-details-grid">
-        <div class="contact-map">
+    <!-- Contact details section -->
+    <section class="contact-details" aria-labelledby="contact-details-heading" style="margin-top:24px;">
+      <h2 id="contact-details-heading" style="font-size:20px;margin-bottom:8px;">Visit or call us</h2>
+      <div style="display:flex;gap:20px;flex-wrap:wrap;align-items:flex-start;">
+        <div style="flex:1 1 320px;min-width:280px;">
           <iframe
             src="https://www.google.com/maps?q=Cape%20Town%20CBD&output=embed"
+            width="100%" height="260" style="border:0;border-radius:8px;" allowfullscreen loading="lazy" referrerpolicy="no-referrer-when-downgrade"
             title="StyleHub Boutique location on map">
           </iframe>
         </div>
-        <div class="contact-address">
-          <address>
+        <div style="flex:0 0 320px;min-width:240px;">
+          <address style="font-style:normal;background:#fff;padding:16px;border-radius:8px;box-shadow:0 2px 8px rgba(0,0,0,0.05);">
             <strong>StyleHub Boutique</strong><br>
             12 Market Lane<br>
             Cape Town CBD, 8001<br>
             South Africa
           </address>
-          <p>
-            <strong>Phone</strong><br>
-            <a href="tel:+27212345678">+27 21 234 5678</a>
-          </p>
-          <p>
-            <strong>Email</strong><br>
-            <a href="mailto:contact@stylehub.example">contact@stylehub.example</a>
-          </p>
+          <p style="margin:12px 0 0;"><strong>Phone</strong><br><a href="tel:+27212345678" style="color:#ff4081;text-decoration:none;">+27 21 234 5678</a></p>
+          <p style="margin:12px 0 0;"><strong>Email</strong><br><a href="mailto:contact@stylehub.example" style="color:#ff4081;text-decoration:none;">contact@stylehub.example</a></p>
+          <p style="margin:12px 0 0;"><strong>Business Hours</strong><br>Mon-Fri: 9AM-6PM<br>Sat: 9AM-4PM<br>Sun: 10AM-2PM</p>
         </div>
       </div>
     </section>
@@ -274,14 +156,190 @@
     <p>© 2025 StyleHub Boutique. All rights reserved.</p>
   </footer>
 
-  <script src="main.js"></script>
-=======
-    <!-- Footer -->
-    <footer class="footer">
-        <p>© 2025 StyleHub Boutique. All Rights Reserved.</p>
-    </footer>
->>>>>>> 020b4d0cc79710f9f031e2cc33f2f3ad0e65b3a4
+  <script>
+    // Enhanced Contact Form Validation and AJAX Submission
+    document.addEventListener('DOMContentLoaded', function() {
+      const form = document.getElementById('contact-form');
+      const feedbackEl = document.getElementById('form-feedback');
+      const loadingIndicator = document.getElementById('loading-indicator');
+      const submitBtn = document.getElementById('submit-btn');
+      const successModal = document.getElementById('success-modal');
+      const charCounter = document.getElementById('char-counter');
+      const messageTextarea = document.getElementById('message');
+
+      // Character counter for message
+      messageTextarea.addEventListener('input', function() {
+        charCounter.textContent = this.value.length;
+      });
+
+      // Modal functionality
+      const closeModal = document.querySelector('.close-modal');
+      const modalCloseBtn = document.getElementById('modal-close-btn');
+
+      function showModal() {
+        successModal.style.display = 'block';
+      }
+
+      function hideModal() {
+        successModal.style.display = 'none';
+      }
+
+      closeModal.addEventListener('click', hideModal);
+      modalCloseBtn.addEventListener('click', hideModal);
+      window.addEventListener('click', function(event) {
+        if (event.target === successModal) {
+          hideModal();
+        }
+      });
+
+      // Validation functions
+      function setError(input, message) {
+        input.classList.add('field-error');
+        const errorEl = document.getElementById(input.id + '-error');
+        if (errorEl) {
+          errorEl.textContent = message;
+          errorEl.style.color = '#d00';
+        }
+      }
+
+      function clearError(input) {
+        input.classList.remove('field-error');
+        const errorEl = document.getElementById(input.id + '-error');
+        if (errorEl) errorEl.textContent = '';
+      }
+
+      function validateField(input) {
+        clearError(input);
+        
+        if (input.hasAttribute('required') && !input.value.trim()) {
+          setError(input, 'This field is required');
+          return false;
+        }
+
+        // Email validation
+        if (input.type === 'email' && input.value.trim()) {
+          const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+          if (!emailRegex.test(input.value.trim())) {
+            setError(input, 'Please enter a valid email address');
+            return false;
+          }
+        }
+
+        // Phone validation (South African format)
+        if (input.id === 'phone' && input.value.trim()) {
+          const phoneRegex = /^(\+27|0)[0-9]{9}$/;
+          const cleanedPhone = input.value.replace(/\s/g, '');
+          if (!phoneRegex.test(cleanedPhone)) {
+            setError(input, 'Please enter a valid South African phone number');
+            return false;
+          }
+        }
+
+        // Name validation
+        if (input.id === 'name' && input.value.trim().length < 2) {
+          setError(input, 'Name must be at least 2 characters long');
+          return false;
+        }
+
+        // Message validation
+        if (input.id === 'message') {
+          if (input.value.trim().length < 10) {
+            setError(input, 'Message must be at least 10 characters long');
+            return false;
+          }
+          if (input.value.trim().length > 1000) {
+            setError(input, 'Message must not exceed 1000 characters');
+            return false;
+          }
+        }
+
+        return true;
+      }
+
+      // Real-time validation
+      document.querySelectorAll('#contact-form input, #contact-form textarea, #contact-form select').forEach(input => {
+        input.addEventListener('blur', () => validateField(input));
+        input.addEventListener('input', () => {
+          clearError(input);
+          // Remove error styling when user starts typing
+          if (input.classList.contains('field-error')) {
+            input.classList.remove('field-error');
+          }
+        });
+      });
+
+      // Form submission
+      form.addEventListener('submit', async (e) => {
+        e.preventDefault();
+        
+        // Validate all fields
+        let isValid = true;
+        const requiredFields = form.querySelectorAll('[required]');
+        requiredFields.forEach(field => {
+          if (!validateField(field)) {
+            isValid = false;
+          }
+        });
+
+        if (!isValid) {
+          feedbackEl.textContent = 'Please correct the errors highlighted in red and try again.';
+          feedbackEl.className = 'feedback error';
+          return;
+        }
+
+        // Show loading indicator
+        loadingIndicator.style.display = 'block';
+        submitBtn.disabled = true;
+        feedbackEl.textContent = '';
+        feedbackEl.className = 'feedback';
+
+        // Collect form data
+        const formData = {
+          name: document.getElementById('name').value.trim(),
+          email: document.getElementById('email').value.trim(),
+          phone: document.getElementById('phone').value.trim(),
+          type: document.getElementById('type').value,
+          priority: document.getElementById('priority').value,
+          message: document.getElementById('message').value.trim(),
+          newsletter: document.getElementById('newsletter').checked,
+          timestamp: new Date().toISOString()
+        };
+
+        try {
+          // Simulate AJAX submission (in a real scenario, this would be a fetch to your backend)
+          await new Promise(resolve => setTimeout(resolve, 1500)); // Simulate network delay
+          
+          // For demonstration purposes, we'll consider this successful
+          // In a real application, you would use:
+          // const response = await fetch('/api/contact', {
+          //   method: 'POST',
+          //   headers: { 'Content-Type': 'application/json' },
+          //   body: JSON.stringify(formData)
+          // });
+          
+          // if (!response.ok) throw new Error('Server response was not ok');
+
+          // Success handling
+          loadingIndicator.style.display = 'none';
+          submitBtn.disabled = false;
+          
+          // Show success modal
+          showModal();
+          
+          // Reset form
+          form.reset();
+          charCounter.textContent = '0';
+          
+        } catch (error) {
+          // Error handling
+          loadingIndicator.style.display = 'none';
+          submitBtn.disabled = false;
+          feedbackEl.textContent = 'Sorry, there was an error sending your message. Please try again later or contact us directly.';
+          feedbackEl.className = 'feedback error';
+          console.error('Form submission error:', error);
+        }
+      });
+    });
+  </script>
 </body>
 </html>
-
-
