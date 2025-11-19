@@ -298,6 +298,18 @@ h2 {
 • header.html (or relevant file containing the header component)
 • The header now features a more compact, space-efficient navigation while maintaining all functionality, accessibility, and visual appeal.
 
+# Images
+• <img width="1868" height="902" alt="Screenshot 2025-11-19 224334" src="https://github.com/user-attachments/assets/247257fe-6cc8-4372-8e4a-901ccd8db1d7" />
+• <img width="1885" height="900" alt="Screenshot 2025-11-19 224353" src="https://github.com/user-attachments/assets/898e065b-a9ac-42e8-bc67-156729b12547" />
+• <img width="1855" height="907" alt="Screenshot 2025-11-19 224415" src="https://github.com/user-attachments/assets/6194cfcf-c982-4a71-baf8-e4538483f045" />
+• <img width="1841" height="871" alt="Screenshot 2025-11-19 224430" src="https://github.com/user-attachments/assets/33f11eea-3475-4329-9365-1eb9964e0a56" />
+• <img width="1791" height="898" alt="Screenshot 2025-11-19 224451" src="https://github.com/user-attachments/assets/02af2630-781a-45d7-9110-2ee1b825b802" />
+• <img width="1858" height="903" alt="Screenshot 2025-11-19 224508" src="https://github.com/user-attachments/assets/b147da96-9d6a-4d0a-bdbd-5e49bb00cd11" />
+• <img width="1846" height="902" alt="Screenshot 2025-11-19 224532" src="https://github.com/user-attachments/assets/c0073aa1-353d-4ca2-9f59-a9b423d25931" />
+• <img width="1856" height="889" alt="Screenshot 2025-11-19 224551" src="https://github.com/user-attachments/assets/69d9a28d-357e-4fde-a5ac-19f101135017" />
+• <img width="1775" height="890" alt="Screenshot 2025-11-19 224613" src="https://github.com/user-attachments/assets/26aee276-d95c-437d-bab1-01e8ff955405" />
+• <img width="1593" height="826" alt="Screenshot 2025-11-19 224628" src="https://github.com/user-attachments/assets/165ec2a6-dc77-4b73-9b81-f8e33c101225" />
+
 
 ### References ## 
 
